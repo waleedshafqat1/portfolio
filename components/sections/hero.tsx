@@ -86,7 +86,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-4 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-ink-900 dark:text-ink-50"
+            className="mt-4 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-ink-900 dark:text-ink-50"
           >
             <span className="italic text-gradient">Analytics</span>{' '}
             <span className="italic">Consultant</span>
@@ -160,7 +160,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative aspect-square w-52 sm:w-64 md:w-72 lg:w-full lg:max-w-md mx-auto"
+            className="relative aspect-square w-44 sm:w-56 md:w-64 lg:w-full lg:max-w-md mx-auto"
           >
             {/* Animated blob background */}
             <div className="absolute inset-0 bg-gradient-to-tr from-accent-500 via-glow to-accent-400 animate-blob opacity-90" />

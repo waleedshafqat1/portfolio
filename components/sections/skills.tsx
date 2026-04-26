@@ -15,7 +15,7 @@ export function Skills() {
       className="section-padding relative bg-ink-50/50 dark:bg-ink-950/50 border-y border-ink-200 dark:border-ink-800"
     >
       <div className="container-page">
-        <div className="grid lg:grid-cols-12 gap-12">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
           <div className="lg:col-span-5">
             <span className="section-label">Skills</span>
             <h2 className="mt-6 heading-display">
@@ -54,7 +54,7 @@ export function Skills() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className="card-base p-8"
+                className="card-base p-5 md:p-8"
               >
                 <div className="space-y-6">
                   {activeGroup.skills.map((skill, i) => (

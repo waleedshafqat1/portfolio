@@ -47,7 +47,7 @@ export function Work() {
                 href={study.url || `/work/${study.slug}`}
                 target={study.url ? '_blank' : undefined}
                 rel={study.url ? 'noopener noreferrer' : undefined}
-                className="block card-base p-8 h-full hover:border-accent-500 transition-all duration-300 relative overflow-hidden"
+                className="block card-base p-5 md:p-8 h-full hover:border-accent-500 transition-all duration-300 relative overflow-hidden"
               >
                 {/* Shimmer corner */}
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent-500/10 rounded-full blur-3xl group-hover:bg-accent-500/20 transition-colors" />
@@ -71,7 +71,7 @@ export function Work() {
                     <ArrowUpRight className="h-5 w-5 text-ink-400 group-hover:text-accent-500 group-hover:-translate-y-1 group-hover:translate-x-1 transition-all" />
                   </div>
 
-                  <h3 className="font-display text-2xl md:text-3xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors">
+                  <h3 className="font-display text-xl md:text-2xl lg:text-3xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors break-words">
                     {study.title}
                   </h3>
 

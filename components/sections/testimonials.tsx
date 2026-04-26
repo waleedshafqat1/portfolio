@@ -36,9 +36,9 @@ export function Testimonials() {
           </h2>
 
           <div className="mt-16 relative">
-            <Quote className="h-16 w-16 text-accent-500/20 mx-auto mb-8" />
+            <Quote className="h-10 w-10 md:h-16 md:w-16 text-accent-500/20 mx-auto mb-8" />
 
-            <div className="min-h-[360px] relative">
+            <div className="min-h-[280px] md:min-h-[360px] relative">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={index}
@@ -57,7 +57,7 @@ export function Testimonials() {
                     ))}
                   </div>
 
-                  <blockquote className="font-display text-2xl md:text-3xl leading-relaxed text-ink-900 dark:text-ink-50 italic">
+                  <blockquote className="font-display text-lg sm:text-2xl md:text-3xl leading-relaxed text-ink-900 dark:text-ink-50 italic">
                     &ldquo;{current.quote}&rdquo;
                   </blockquote>
 
@@ -77,7 +77,7 @@ export function Testimonials() {
             </div>
 
             {/* Controls */}
-            <div className="mt-12 flex items-center justify-center gap-6">
+            <div className="mt-8 md:mt-12 flex items-center justify-center gap-4 md:gap-6">
               <button
                 onClick={() =>
                   setIndex((i) =>

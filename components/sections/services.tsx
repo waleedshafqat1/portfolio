@@ -52,7 +52,7 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ delay: i * 0.08 }}
-                className="group relative card-base p-8 hover:border-accent-500 transition-all duration-300 overflow-hidden"
+                className="group relative card-base p-6 md:p-8 hover:border-accent-500 transition-all duration-300 overflow-hidden"
               >
                 {/* Hover gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/0 to-accent-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />

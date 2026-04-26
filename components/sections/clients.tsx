@@ -19,7 +19,7 @@ function EmployerCard({
   const [logoFailed, setLogoFailed] = useState(false);
 
   return (
-    <div className="flex flex-col items-center gap-3 px-8 py-6 rounded-xl border border-accent-500/40 bg-accent-500/5 hover:border-accent-500 hover:-translate-y-1 transition-all duration-300 w-56">
+    <div className="flex flex-col items-center gap-3 px-6 py-6 rounded-xl border border-accent-500/40 bg-accent-500/5 hover:border-accent-500 hover:-translate-y-1 transition-all duration-300 w-full sm:w-56">
       {logoFailed ? (
         <div className="h-12 w-12 rounded-xl bg-accent-500/10 flex items-center justify-center">
           <span className="font-display text-2xl text-accent-500">{name[0]}</span>
@@ -145,8 +145,8 @@ export function Clients() {
 
       {/* Marquee — intentionally full-bleed */}
       <div className="relative mt-4">
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-ink-50 dark:from-ink-950 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-ink-50 dark:from-ink-950 to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-12 md:w-48 bg-gradient-to-r from-ink-50 dark:from-ink-950 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-12 md:w-48 bg-gradient-to-l from-ink-50 dark:from-ink-950 to-transparent z-10 pointer-events-none" />
         <div className="flex gap-8 animate-marquee hover:[animation-play-state:paused]">
           {doubled.map((org, i) => (
             <ProjectCard

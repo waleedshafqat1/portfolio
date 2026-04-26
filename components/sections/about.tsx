@@ -40,7 +40,7 @@ export function About() {
   return (
     <section id="about" className="section-padding relative">
       <div className="container-page">
-        <div className="grid lg:grid-cols-12 gap-12">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Left: Intro */}
           <div className="lg:col-span-5">
             <motion.span

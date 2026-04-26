@@ -46,7 +46,7 @@ export function ImpactMetrics() {
   return (
     <section className="relative py-16 md:py-20 border-y border-ink-200 dark:border-ink-800 bg-ink-50/50 dark:bg-ink-950/50">
       <div className="container-page">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-4">
           {impactMetrics.map((metric, i) => {
             const target =
               metric.dynamic === 'experience'
@@ -61,7 +61,7 @@ export function ImpactMetrics() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="text-center md:text-left md:border-l md:border-ink-200 md:dark:border-ink-800 md:pl-6 first:border-l-0"
               >
-                <div className="font-display text-5xl md:text-6xl text-ink-900 dark:text-ink-50">
+                <div className="font-display text-4xl sm:text-5xl md:text-6xl text-ink-900 dark:text-ink-50">
                   {metric.static ? (
                     <span>{metric.static}</span>
                   ) : (
