@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Calendar } from 'lucide-react';
 import Link from 'next/link';
-import { site, heroTaglines, getYearsOfExperience } from '@/lib/data';
+import { heroTaglines, getYearsOfExperience } from '@/lib/data';
 
 export function Hero() {
   const [taglineIndex, setTaglineIndex] = useState(0);
@@ -53,23 +53,6 @@ export function Hero() {
       <div className="container-page relative z-10 grid lg:grid-cols-12 gap-12 items-center">
         {/* Left: Text content */}
         <div className="lg:col-span-7 order-2 lg:order-1">
-          {/* Availability pill */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-ink-200 dark:border-ink-800 bg-white/50 dark:bg-ink-900/50 backdrop-blur text-sm"
-          >
-            {site.availability.isAvailable && (
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
-              </span>
-            )}
-            <span className="text-ink-700 dark:text-ink-300">
-              {site.availability.status}
-            </span>
-          </motion.div>
 
           {/* Greeting */}
           <motion.p
