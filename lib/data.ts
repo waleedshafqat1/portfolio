@@ -223,9 +223,9 @@ export const experience = [
     location: 'Singapore (Remote)',
     period: 'May 2021 – Mar 2024',
     bullets: [
-      'Developed Python models for assortment optimization, revenue forecasting and pricing for Levi China.',
+      'Developed Python models for assortment optimization, revenue forecasting and pricing for Levis China.',
       'Designed and maintained dashboards for Levis China, US and Europe e-commerce reporting.',
-      'Built Funnel Metrics and Out-of-Stock Analysis reports for Levi US.',
+      'Built Funnel Metrics and Out-of-Stock Analysis reports for Levis US.',
       'Engineered market comparison and performance tracking dashboards for AstraZeneca.',
     ],
   },
