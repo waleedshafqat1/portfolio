@@ -288,42 +288,6 @@ export const caseStudies = [
     featured: true,
   },
   {
-    slug: 'pharma-market-dashboards',
-    title: 'Market Tracking for a Top-10 Pharma Company',
-    client: 'AstraZeneca (via Lynx Analytics)',
-    industry: 'Pharmaceutical',
-    duration: 'Ongoing',
-    stack: ['Power BI', 'Python', 'Power Apps', 'Power Automate'],
-    summary:
-      'Market comparison and performance tracking dashboards, plus a Patient Model Wizard app streamlining healthcare analytics.',
-    problem:
-      'Regional teams needed unified, timely visibility into brand performance across markets — and analysts needed a faster way to run patient-flow models.',
-    approach:
-      'Engineered performance dashboards in Power BI plus a Power Apps frontend that triggered Python model runs via Power Automate, returning results back to the user.',
-    outcome:
-      'Cut model turnaround from days to minutes for repeat analyses. Became the standard tool for the team.',
-    url: '',
-    featured: true,
-  },
-  {
-    slug: 'astrazeneca-patient-model-tracker',
-    title: 'Patient Model Submission & Forecasting Tracker for AstraZeneca',
-    client: 'AstraZeneca (via Lynx Analytics)',
-    industry: 'Pharmaceutical',
-    duration: '4 months',
-    stack: ['Power Apps', 'Power Automate', 'Power BI'],
-    summary:
-      'Built an end-to-end Power Platform solution enabling AstraZeneca teams across different regions to submit patient models, with automated consolidation and a Power BI tracking report used for forecasting.',
-    problem:
-      'Different AstraZeneca teams were submitting patient models through disconnected, manual processes — making it impossible to consolidate submissions, track progress or use the data for reliable forecasting.',
-    approach:
-      'Designed a Power App that gave each team a consistent, structured interface for submitting their patient models. Power Automate workflows captured each submission and consolidated the data into a central source. Built a Power BI report on top to track all submissions in one place and surface the trends needed for forecasting.',
-    outcome:
-      'Replaced fragmented manual processes with a single, governed submission workflow. The Power BI report became the go-to tool for tracking patient model submissions and informing forecasting decisions across teams.',
-    url: '',
-    featured: true,
-  },
-  {
     slug: 'levis-bot-scoring-model',
     title: 'Bot Traffic Scoring Model for Business Performance Reporting',
     client: "Levis (via Lynx Analytics)",
@@ -356,6 +320,42 @@ export const caseStudies = [
       'Designed and built a Last Touch Channel attribution reporting framework that consolidated traffic data across all web and app properties and multiple regions. Defined a consistent attribution methodology and structured the reporting to surface channel-level performance in a format accessible to non-technical business stakeholders.',
     outcome:
       'Gave regional and global teams a reliable, unified source of truth for channel performance. The reporting was adopted directly by stakeholders across the business to inform key decisions around marketing investment, traffic strategy and channel prioritization.',
+    url: '',
+    featured: true,
+  },
+  {
+    slug: 'pharma-market-dashboards',
+    title: 'Market Tracking for a Top-10 Pharma Company',
+    client: 'AstraZeneca (via Lynx Analytics)',
+    industry: 'Pharmaceutical',
+    duration: '3 months',
+    stack: ['Power BI', 'Python', 'Power Apps', 'Power Automate'],
+    summary:
+      'Market comparison and performance tracking dashboards, plus a Patient Model Wizard app streamlining healthcare analytics.',
+    problem:
+      'Regional teams needed unified, timely visibility into brand performance across markets — and analysts needed a faster way to run patient-flow models.',
+    approach:
+      'Engineered performance dashboards in Power BI plus a Power Apps frontend that triggered Python model runs via Power Automate, returning results back to the user.',
+    outcome:
+      'Cut model turnaround from days to minutes for repeat analyses. Became the standard tool for the team.',
+    url: '',
+    featured: true,
+  },
+  {
+    slug: 'astrazeneca-patient-model-tracker',
+    title: 'Patient Model Submission & Forecasting Tracker for AstraZeneca',
+    client: 'AstraZeneca (via Lynx Analytics)',
+    industry: 'Pharmaceutical',
+    duration: '4 months',
+    stack: ['Power Apps', 'Power Automate', 'Power BI'],
+    summary:
+      'Built an end-to-end Power Platform solution enabling AstraZeneca teams across different regions to submit patient models, with automated consolidation and a Power BI tracking report used for forecasting.',
+    problem:
+      'Different AstraZeneca teams were submitting patient models through disconnected, manual processes — making it impossible to consolidate submissions, track progress or use the data for reliable forecasting.',
+    approach:
+      'Designed a Power App that gave each team a consistent, structured interface for submitting their patient models. Power Automate workflows captured each submission and consolidated the data into a central source. Built a Power BI report on top to track all submissions in one place and surface the trends needed for forecasting.',
+    outcome:
+      'Replaced fragmented manual processes with a single, governed submission workflow. The Power BI report became the go-to tool for tracking patient model submissions and informing forecasting decisions across teams.',
     url: '',
     featured: true,
   },
