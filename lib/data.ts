@@ -400,7 +400,7 @@ export const caseStudies = [
     title: 'Workplace Injury Reporting Suite for Solv Australia',
     client: 'Solv Australia (via Upwork)',
     industry: 'Workplace Safety',
-    duration: 'Ongoing',
+    duration: '1.5 years',
     stack: ['Power BI', 'SQL'],
     summary:
       'Designed and delivered hundreds of reports and dashboards covering workplace injury data for Solv Australia — a platform helping businesses manage safety compliance.',
@@ -418,7 +418,7 @@ export const caseStudies = [
     title: 'Digital Analytics for EST Living',
     client: 'EST Living (via Upwork)',
     industry: 'Real Estate Media',
-    duration: 'Ongoing',
+    duration: '1 year',
     stack: ['Looker Studio', 'Google Analytics', 'Google Tag Manager'],
     summary:
       'Built a suite of Looker Studio dashboards and Google Analytics reports tracking website performance across EST Living\'s portfolio of luxury real estate brands and their products.',
