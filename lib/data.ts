@@ -7,7 +7,7 @@ export const site = {
   name: 'Waleed Shafqat',
   title: 'Waleed Shafqat — Senior Analytics & Data Science Consultant',
   description:
-    'Senior Analytics & Data Science Consultant with 6+ years delivering BI dashboards, analytics solutions and predictive models for Levi\'s, AstraZeneca and Toyota. Top Rated on Upwork with 100% client satisfaction.',
+    'Senior Analytics & Data Science Consultant with 6+ years delivering BI dashboards, analytics solutions and predictive models for Levis, AstraZeneca and Toyota. Top Rated on Upwork with 100% client satisfaction.',
   url: 'https://waleedshafqat.com', // Update after domain purchase
   keywords: [
     'Data Scientist',
@@ -209,8 +209,10 @@ export const experience = [
     period: 'Mar 2024 – Present',
     highlight: 'Promoted from Data Scientist',
     bullets: [
-      'Lead analytics for Levi\'s and AstraZeneca — retail forecasting, CVM migration, healthcare BI.',
-      'Spearheaded Levi\'s CVM Analytics migration, optimizing data workflows across China, US, Europe.',
+      'Lead analytics for Levis and AstraZeneca — retail forecasting, CVM migration, healthcare BI.',
+      'Spearheaded Levis CVM Analytics migration, optimizing data workflows across China, US, Europe.',
+      'Built a hybrid bot traffic scoring model to protect KPI accuracy in business performance reporting, identifying sophisticated bots that evaded third-party detection.',
+      'Delivered Last Touch Channel attribution reporting across web and app traffic for multiple regions, giving stakeholders clear channel-level performance insight.',
       'Built Patient Model Wizard integrating Power Apps, Power Automate and Python for AstraZeneca.',
       'Mentor junior team members in dashboard development and ML best practices.',
     ],
@@ -222,7 +224,7 @@ export const experience = [
     period: 'May 2021 – Mar 2024',
     bullets: [
       'Developed Python models for assortment optimization, revenue forecasting and pricing for Levi China.',
-      'Designed and maintained dashboards for Levi\'s China, US and Europe e-commerce reporting.',
+      'Designed and maintained dashboards for Levis China, US and Europe e-commerce reporting.',
       'Built Funnel Metrics and Out-of-Stock Analysis reports for Levi US.',
       'Engineered market comparison and performance tracking dashboards for AstraZeneca.',
     ],
@@ -269,15 +271,15 @@ export const experience = [
 export const caseStudies = [
   {
     slug: 'project-mercury-levis',
-    title: 'Project Mercury — Reporting Migration at Levi\'s',
-    client: "Levi's (via Lynx Analytics)",
+    title: 'Project Mercury — Reporting Migration at Levis',
+    client: "Levis (via Lynx Analytics)",
     industry: 'Retail',
     duration: '2 years',
     stack: ['BigQuery', 'Looker Studio', 'Segment', 'ETL Pipelines', 'SQL'],
     summary:
-      'Led a two-year enterprise-wide initiative to migrate all analytical reporting at Levi\'s from third-party tools to a fully owned, in-house reporting stack — covering the US, EU and Canada.',
+      'Led a two-year enterprise-wide initiative to migrate all analytical reporting at Levis from third-party tools to a fully owned, in-house reporting stack — covering the US, EU and Canada.',
     problem:
-      'Levi\'s analytics were fragmented across multiple third-party platforms, creating vendor dependency, inconsistent metrics and limited flexibility for the regional teams who relied on them daily.',
+      'Levis analytics were fragmented across multiple third-party platforms, creating vendor dependency, inconsistent metrics and limited flexibility for the regional teams who relied on them daily.',
     approach:
       'Audited all existing third-party reports across regions, then rebuilt the full stack on Google-native tooling — leveraging already-available Segment data as the source, piping it into BigQuery via ETL pipelines and delivering reporting through Looker Studio. Established metric governance to ensure consistency across the US, EU and Canada and worked directly with regional stakeholders to drive adoption and minimise disruption.',
     outcome:
@@ -322,9 +324,45 @@ export const caseStudies = [
     featured: true,
   },
   {
+    slug: 'levis-bot-scoring-model',
+    title: 'Bot Traffic Scoring Model for Business Performance Reporting',
+    client: "Levis (via Lynx Analytics)",
+    industry: 'Retail',
+    duration: '3 months',
+    stack: ['Python', 'BigQuery', 'SQL', 'Statistical Modeling'],
+    summary:
+      "Built a hybrid bot traffic scoring model to protect KPI accuracy in Levis business performance reporting — catching sophisticated bots that evaded existing third-party filtering.",
+    problem:
+      "Key business KPIs were being distorted by bot traffic, including highly sophisticated bots that mimicked human behavior closely enough to slip through established third-party filtering solutions. This made it difficult to trust the numbers driving strategic decisions.",
+    approach:
+      'Conducted in-depth analysis of traffic data to identify behavioral patterns associated with bot activity. Built a two-layer scoring model: the first layer flagged potential bot visits based on known behavioral signatures; the second applied a human-likeness filter to distinguish genuine human sessions from bots that had adopted realistic browsing patterns. Each session was assigned a composite score, and visits crossing the threshold were excluded from reporting.',
+    outcome:
+      'Delivered significantly cleaner KPI data for business performance reporting, reducing bot-driven distortion in executive metrics and restoring confidence in the numbers used for strategic decisions.',
+    url: '',
+    featured: true,
+  },
+  {
+    slug: 'levis-last-touch-channel',
+    title: 'Last Touch Channel Attribution Reporting Across Web and App',
+    client: "Levis (via Lynx Analytics)",
+    industry: 'Retail',
+    duration: '1+ year',
+    stack: ['BigQuery', 'Looker Studio', 'SQL', 'Google Analytics'],
+    summary:
+      "Built a unified Last Touch Channel attribution reporting framework covering all web and app traffic across multiple regions for Levis, giving stakeholders clear visibility into channel performance.",
+    problem:
+      'There was no single, consistent view of where web and app traffic was originating or how different marketing channels were performing across regions — limiting the ability of business stakeholders to make confident, data-driven decisions.',
+    approach:
+      'Designed and built a Last Touch Channel attribution reporting framework that consolidated traffic data across all web and app properties and multiple regions. Defined a consistent attribution methodology and structured the reporting to surface channel-level performance in a format accessible to non-technical business stakeholders.',
+    outcome:
+      'Gave regional and global teams a reliable, unified source of truth for channel performance. The reporting was adopted directly by stakeholders across the business to inform key decisions around marketing investment, traffic strategy and channel prioritization.',
+    url: '',
+    featured: true,
+  },
+  {
     slug: 'global-apparel-forecasting',
     title: 'Assortment Optimization for a Global Apparel Retailer',
-    client: "Levi's (via Lynx Analytics)",
+    client: "Levis (via Lynx Analytics)",
     industry: 'Retail',
     duration: '8 months',
     stack: ['Python', 'BigQuery', 'Power BI', 'Time Series'],
@@ -477,7 +515,7 @@ export const employers = [
 // PROJECTS — Organisations behind the work (enterprise via employer + direct Upwork)
 // ============================================================
 export const projectOrgs = [
-  { name: "Levi's",                  industry: 'Retail',            logo: '/logos/levis.png' },
+  { name: "Levis",                  industry: 'Retail',            logo: '/logos/levis.png' },
   { name: 'AstraZeneca',             industry: 'Pharmaceutical',    logo: '/logos/astrazeneca.png' },
   { name: 'Toyota',                  industry: 'Automotive',        logo: '/logos/toyota.png' },
   { name: 'Positive Minds Gippsland', industry: 'Healthcare',       logo: '/logos/positive-minds.png' },

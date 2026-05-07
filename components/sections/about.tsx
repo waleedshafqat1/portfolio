@@ -32,7 +32,7 @@ const storyBeats = [
     icon: TrendingUp,
     year: '2021—Present',
     title: 'Enterprise',
-    text: 'Joined Lynx Analytics, Singapore. Promoted to Senior in 2024. Leading work for Levi\'s, AstraZeneca.',
+    text: 'Joined Lynx Analytics, Singapore. Promoted to Senior in 2024. Leading work for Levis, AstraZeneca.',
   },
 ];
 
