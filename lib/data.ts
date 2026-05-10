@@ -30,7 +30,7 @@ export const site = {
   },
   contact: {
     email: 'waleedshafqat1@gmail.com',
-    phone: '+92-347-7711888',
+    phone: '+61 451 466 432',
     location: 'Lahore, Pakistan · Remote',
   },
   social: {
