@@ -235,9 +235,12 @@ export function Contact() {
                 </button>
 
                 {status === 'success' && (
-                  <div className="flex items-center gap-2 p-4 rounded-lg bg-green-500/10 text-green-600 dark:text-green-400 text-sm">
-                    <CheckCircle2 className="h-4 w-4" />
-                    Message sent! I&apos;ll be in touch shortly.
+                  <div className="flex items-start gap-3 p-5 rounded-lg bg-green-500/10 text-green-600 dark:text-green-400 text-sm">
+                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-0.5" />
+                    <div>
+                      <div className="font-semibold mb-1">Thank you for reaching out!</div>
+                      <div className="leading-relaxed opacity-90">Your message has been received. I will review it and get back to you as soon as possible — typically within 24 hours.</div>
+                    </div>
                   </div>
                 )}
                 {status === 'error' && (

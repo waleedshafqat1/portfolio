@@ -1,10 +1,13 @@
 import type { Metadata, Viewport } from 'next';
 import { Instrument_Serif, Inter, JetBrains_Mono } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { ThemeProvider } from '@/components/shared/theme-provider';
 import { Navbar } from '@/components/shared/navbar';
 import { Footer } from '@/components/shared/footer';
 import { site } from '@/lib/data';
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const display = Instrument_Serif({
   subsets: ['latin'],
@@ -96,6 +99,22 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="font-sans">
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `}
+            </Script>
+          </>
+        )}
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
