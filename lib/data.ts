@@ -284,7 +284,7 @@ export const caseStudies = [
   {
     slug: 'enterprise-reporting-migration',
     title: 'Enterprise Reporting Migration — Multi-Region Retailer',
-    client: "Enterprise Client (via Lynx Analytics)",
+    client: "Enterprise Client (NDA-Protected)",
     industry: 'Retail',
     duration: '2 years',
     stack: ['BigQuery', 'Looker Studio', 'Segment', 'ETL Pipelines', 'SQL'],
@@ -302,7 +302,7 @@ export const caseStudies = [
   {
     slug: 'bot-scoring-ecommerce',
     title: 'Bot Traffic Scoring Model for E-Commerce Reporting',
-    client: "E-Commerce Client (via Lynx Analytics)",
+    client: "E-Commerce Client (NDA-Protected)",
     industry: 'Retail',
     duration: '3 months',
     stack: ['Python', 'BigQuery', 'SQL', 'Statistical Modeling'],
@@ -320,7 +320,7 @@ export const caseStudies = [
   {
     slug: 'attribution-reporting-multichannel',
     title: 'Multi-Channel Attribution Reporting — Web and App',
-    client: "E-Commerce Client (via Lynx Analytics)",
+    client: "E-Commerce Client (NDA-Protected)",
     industry: 'Retail',
     duration: '1+ year',
     stack: ['BigQuery', 'Looker Studio', 'SQL', 'Google Analytics'],
@@ -338,7 +338,7 @@ export const caseStudies = [
   {
     slug: 'pharma-market-analytics-platform',
     title: 'Market Tracking and Analytics Platform — Pharma',
-    client: 'Pharmaceutical Client (via Lynx Analytics)',
+    client: 'Pharmaceutical Client (NDA-Protected)',
     industry: 'Pharmaceutical',
     duration: '3 months',
     stack: ['Power BI', 'Python', 'Power Apps', 'Power Automate'],
@@ -356,7 +356,7 @@ export const caseStudies = [
   {
     slug: 'model-submission-tracker-pharma',
     title: 'Model Submission and Tracking Platform — Pharma',
-    client: 'Pharmaceutical Client (via Lynx Analytics)',
+    client: 'Pharmaceutical Client (NDA-Protected)',
     industry: 'Pharmaceutical',
     duration: '4 months',
     stack: ['Power Apps', 'Power Automate', 'Power BI'],
@@ -374,7 +374,7 @@ export const caseStudies = [
   {
     slug: 'demand-forecasting-apparel',
     title: 'Demand Forecasting and Assortment Optimization — Apparel',
-    client: "Global Apparel Retailer (via Lynx Analytics)",
+    client: "Global Apparel Retailer (NDA-Protected)",
     industry: 'Retail',
     duration: '8 months',
     stack: ['Python', 'BigQuery', 'Power BI', 'Time Series'],
@@ -410,7 +410,7 @@ export const caseStudies = [
   {
     slug: 'solv-workplace-injury-reporting',
     title: 'Workplace Injury Reporting Suite for Solv Australia',
-    client: 'Solv Australia (via Upwork)',
+    client: 'Solv Australia',
     industry: 'Workplace Safety',
     duration: '1.5 years',
     stack: ['Power BI', 'SQL'],
@@ -428,7 +428,7 @@ export const caseStudies = [
   {
     slug: 'estliving-digital-analytics',
     title: 'Digital Analytics for EST Living',
-    client: 'EST Living (via Upwork)',
+    client: 'EST Living',
     industry: 'Real Estate Media',
     duration: '1 year',
     stack: ['Looker Studio', 'Google Analytics', 'Google Tag Manager'],
@@ -446,7 +446,7 @@ export const caseStudies = [
   {
     slug: 'auto-loan-risk',
     title: 'Auto Loan Risk Dashboards for Toyota',
-    client: 'Toyota Financial (via Upwork)',
+    client: 'Toyota Financial',
     industry: 'Automotive Finance',
     duration: '2 months',
     stack: ['Power BI', 'SQL'],
@@ -482,7 +482,7 @@ export const caseStudies = [
   {
     slug: 'jwe-group-it-engagement',
     title: 'Full-Stack IT Engagement for JWE Group',
-    client: 'JWE Group (Direct)',
+    client: 'JWE Group',
     industry: 'IT Consulting',
     duration: '2 months',
     stack: ['Next.js', 'TypeScript', 'Microsoft 365', 'Vercel', 'Security Hardening'],
@@ -500,7 +500,7 @@ export const caseStudies = [
   {
     slug: 'microfinance-credit-scoring',
     title: 'Credit Scoring for a Microfinance Bank',
-    client: 'Microfinance Bank (Direct)',
+    client: 'Microfinance Bank',
     industry: 'Finance',
     duration: '3 months',
     stack: ['Python', 'Scikit-learn', 'Pandas'],
