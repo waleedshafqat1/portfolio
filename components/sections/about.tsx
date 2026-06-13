@@ -58,9 +58,8 @@ export function About() {
               transition={{ delay: 0.1 }}
               className="mt-6 heading-display"
             >
-              A decade from{' '}
-              <span className="italic text-gradient">Lahore</span> to the
-              C-suite dashboard.
+              A decade from <span className="italic text-gradient">Lahore</span> to
+              enterprise data science.
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -70,23 +69,13 @@ export function About() {
               className="mt-6 space-y-4 text-ink-600 dark:text-ink-400 leading-relaxed"
             >
               <p>
-                I started as a computer science student with an unusual
-                conviction: that data was going to matter more than most
-                people realized. A decade later, I&apos;m building the models,
-                dashboards, and analytics systems that run enterprise
-                decisions at enterprise clients across three continents.
+                I started as a computer science student with an unusual conviction: that data was going to matter more than most people realized. A decade later, I&apos;m building the models, pipelines, dashboards, and analytics systems that drive enterprise decisions across three continents.
               </p>
               <p>
-                My sweet spot is translating data into clear business
-                decisions — dashboards executives actually open, analytics
-                that move revenue and ML models that get deployed in
-                production. I&apos;ve delivered across retail, pharmaceutical,
-                automotive finance and microfinance, with clients spanning
-                three continents.
+                My work spans the full data science and analytics spectrum — from machine learning models and forecasting systems in production, to BI dashboards executives actually open, to data pipelines and migrations that modernise how organisations manage their data. I&apos;ve delivered across retail, pharmaceutical, automotive finance, and microfinance, with clients including Levis, AstraZeneca, and Toyota.
               </p>
               <p className="text-ink-900 dark:text-ink-100 font-medium">
-                I don&apos;t do dashboards-for-dashboards&apos;-sake. Every
-                project I take on answers: <em>what decision does this unlock?</em>
+                I don&apos;t do work for its own sake. Every project I take on answers one question: <em>what decision, outcome, or capability does this unlock?</em>
               </p>
             </motion.div>
           </div>

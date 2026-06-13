@@ -468,6 +468,24 @@ export const caseStudies = [
     featured: true,
   },
   {
+    slug: 'jwe-group-it-engagement',
+    title: 'Full-Stack IT Engagement for JWE Group',
+    client: 'JWE Group (Direct)',
+    industry: 'IT Consulting',
+    duration: '2 months',
+    stack: ['Next.js', 'TypeScript', 'Microsoft 365', 'Vercel', 'Security Hardening'],
+    summary:
+      'Delivered a complete IT engagement for an Australian electrical contractor — covering full website development from scratch, Microsoft 365 email infrastructure migration, domain ownership transfer, and enterprise security hardening.',
+    problem:
+      'JWE Group — an Australian electrical contractor specialising in power, mining, renewables, and telecommunications — needed a complete IT overhaul. They had no professional website, a fragmented email setup across multiple Hostinger mailboxes, no domain ownership, and a failing enterprise security audit required by a major client.',
+    approach:
+      'Built the company website entirely from scratch using Next.js 14, TypeScript, and Tailwind CSS — 48 fully responsive pages including service pages, project case studies, and team profiles, deployed to Vercel. Migrated all email accounts to Microsoft 365, including manual migration of alias accounts with full archive preservation. Transferred domain ownership from a former IT contractor and resolved all DNS conflicts. Implemented enterprise-grade security hardening including a comprehensive Content Security Policy, HSTS, security headers, and self-hosted fonts.',
+    outcome:
+      'A live production website scoring 98/100 on performance, A-grade security, and 95+/100 on accessibility. A fully operational Microsoft 365 environment with zero data loss and reduced licensing costs. Full domain ownership returned to the client. Security audit requirements met for the enterprise client relationship.',
+    url: '',
+    featured: true,
+  },
+  {
     slug: 'microfinance-credit-scoring',
     title: 'Credit Scoring for a Microfinance Bank',
     client: 'Microfinance Bank (Direct)',
@@ -519,6 +537,7 @@ export const projectOrgs = [
   { name: 'AstraZeneca',             industry: 'Pharmaceutical',    logo: '/logos/astrazeneca.png' },
   { name: 'Toyota',                  industry: 'Automotive',        logo: '/logos/toyota.png' },
   { name: 'Positive Minds Gippsland', industry: 'Healthcare',       logo: '/logos/positive-minds.png' },
+  { name: 'JWE Group',               industry: 'IT Consulting',     logo: '/logos/jwe-logo-full.png' },
   { name: 'Estliving',               industry: 'Real Estate',       logo: '/logos/estliving.png' },
   { name: 'Solv',                    industry: 'Workplace Safety',  logo: '/logos/solv.png' },
   { name: 'Hacking Happy',           industry: 'Business Services', logo: null },
