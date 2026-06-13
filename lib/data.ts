@@ -884,6 +884,123 @@ export const insights = [
 ] as const;
 
 // ============================================================
+// FAQ — Structured Q&A for homepage and service pages
+// ============================================================
+export const homepageFAQ = [
+  {
+    question: 'How do you work with clients who have data under NDA?',
+    answer: 'All my work is confidential by default. I do not share client data, naming, metrics, or approaches without explicit written permission. In case studies, I anonymize or speak in generics. Your data stays yours.',
+  },
+  {
+    question: 'What does a typical engagement look like, and how long does it take?',
+    answer: 'It depends on scope. A single dashboard is typically 4-6 weeks. An analytics migration is 3-6 months. A predictive model is 2-3 months. I give you a detailed timeline after understanding your data and requirements in our discovery call.',
+  },
+  {
+    question: 'Do you work fixed-price or retainer?',
+    answer: 'Both. Project-based work (dashboards, migrations, models) is fixed-price with milestones. Ongoing support is retainer-based (hourly or monthly). We can mix: build something fixed-price, then support it on a small retainer.',
+  },
+  {
+    question: 'Which time zones do you cover?',
+    answer: 'I am based in Lahore, Pakistan. I work across APAC (Singapore, Australia, India), EU (UK, Germany), and US time zones. I am online 6am-10pm Pakistan time, which covers most business hours across these regions.',
+  },
+  {
+    question: 'Can you work with our existing BigQuery / Power BI / Azure setup?',
+    answer: 'Yes. I build on top of whatever you have. If your data is in BigQuery, Snowflake, Redshift, or SQL Server, I can work with it. Same for existing BI tools. I integrate with your stack rather than forcing you to move.',
+  },
+  {
+    question: 'What is the smallest project you will take?',
+    answer: 'A single dashboard or small analysis is fine. There is no minimum project size, but I do have a minimum hourly rate. For small work, retainer-based support often makes more sense economically.',
+  },
+];
+
+export const serviceFAQs: Record<string, typeof homepageFAQ> = {
+  'bi-dashboards': [
+    {
+      question: 'Which tool should we choose: Power BI, Tableau, or Looker Studio?',
+      answer: 'It depends on where your data lives and your team\'s technical depth. If you are on Azure/Microsoft, Power BI is natural. If you are Google-native, Looker Studio. If you need maximum interactivity, Tableau. I can help you decide based on your constraints.',
+    },
+    {
+      question: 'How long does a dashboard build typically take?',
+      answer: 'A single dashboard is usually 4-6 weeks. Multi-dashboard engagements or complex federated setups take 3-6 months. I will give you a clear timeline after understanding your data.',
+    },
+    {
+      question: 'Do you handle data infrastructure, or just the dashboard layer?',
+      answer: 'I build dashboards on top of whatever you have. If your data layer is messy, I can clean it up, but that is a separate engagement. I let you know if infrastructure work is needed before we start.',
+    },
+  ],
+  'analytics-migration': [
+    {
+      question: 'How do you handle data validation during a migration?',
+      answer: 'Every field is reconciled row-by-row against the source. Row counts, sums, dates, null patterns are all verified before cutover. I build automated tests you can re-run post-launch.',
+    },
+    {
+      question: 'What if we are using multiple data sources?',
+      answer: 'That is the norm. I design a unified ingestion layer pulling from Salesforce, GA4, your data warehouse, and custom APIs. The work is in orchestration and conflict resolution.',
+    },
+    {
+      question: 'Can we run old and new stacks in parallel during migration?',
+      answer: 'Yes. We can run both for weeks or months, gradually shifting reports over. This is often essential for large teams to maintain stability.',
+    },
+  ],
+  'predictive-modeling': [
+    {
+      question: 'How much historical data do I need?',
+      answer: 'Time-series models need at least 2 years of clean data to capture seasonality. More is better. If you have less, we can use external data or simpler approaches.',
+    },
+    {
+      question: 'What happens when business changes (product launch, crisis)?',
+      answer: 'Good models degrade gracefully but don\'t auto-correct for regime changes. We build in manual override layers and retrain quarterly to adapt to new patterns.',
+    },
+    {
+      question: 'Do you build neural nets or deep learning?',
+      answer: 'Only when necessary. 90% of forecasting problems solve better with classical time-series (ARIMA, Prophet) or gradient boosting. I choose the simplest model that works.',
+    },
+  ],
+  'ai-chatbots': [
+    {
+      question: 'What is RAG and why is it better than fine-tuning?',
+      answer: 'RAG retrieves relevant documents at query time, so the model answers based on your actual data, not memorized training. It is faster to update, cheaper, and doesn\'t require retraining.',
+    },
+    {
+      question: 'Can it integrate with our existing systems?',
+      answer: 'Yes. Slack, email, customer portals, internal tools — I can build the integration layer. The chatbot can query your databases and pull from Salesforce in real time.',
+    },
+    {
+      question: 'How do you prevent it from confidently giving wrong answers?',
+      answer: 'Confidence scoring, retrieval quality checks, and user feedback loops. We log queries without good answers and retrain. It also knows when to say "I do not know."',
+    },
+  ],
+  'marketing-analytics': [
+    {
+      question: 'How do you handle cross-device and offline attribution?',
+      answer: 'GA4 uses first-party data and cross-domain tracking. For offline, we connect CRM or backend conversion data via user IDs. Full cross-device needs customer data platforms.',
+    },
+    {
+      question: 'Which attribution model should we use?',
+      answer: 'Depends on your business. E-commerce often uses time-decay or position-based. SaaS usually last-touch or multi-touch. We test models against your data and pick what correlates to ROI.',
+    },
+    {
+      question: 'How often should we audit our tracking?',
+      answer: 'After major changes. Otherwise, quarterly audits catch drift. I recommend monthly spot-checks.',
+    },
+  ],
+  'web-development': [
+    {
+      question: 'Is Next.js overkill for a brochure site?',
+      answer: 'No. Next.js is so fast and has great developer experience that it is my default for anything from a simple site to a complex app.',
+    },
+    {
+      question: 'Can you integrate with our CMS or backend?',
+      answer: 'Yes. Headless CMS (Contentful, Strapi), your own API, databases, anything with a REST or GraphQL endpoint. Next.js is API-agnostic.',
+    },
+    {
+      question: 'What about maintenance and updates after launch?',
+      answer: 'I hand over clean, documented code. You can maintain it yourself or I offer retainer support for fixes, optimizations, and feature additions.',
+    },
+  ],
+};
+
+// ============================================================
 // NAVIGATION
 // ============================================================
 export const navLinks = [

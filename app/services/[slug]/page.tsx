@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight, Check, HelpCircle } from 'lucide-react';
-import { servicePages, caseStudies } from '@/lib/data';
+import { servicePages, caseStudies, serviceFAQs } from '@/lib/data';
 import { BreadcrumbSchema, CreativeWorkSchema } from '@/components/json-ld';
 import type { Metadata } from 'next';
 
@@ -124,7 +124,7 @@ export default function ServicePage({ params }: Props) {
               <span className="text-accent-500">Questions</span>
             </h2>
             <div className="space-y-6">
-              {service.faq.map((item, i) => (
+              {(serviceFAQs[service.slug] || service.faq).map((item, i) => (
                 <details
                   key={i}
                   className="group rounded-lg border border-ink-200 dark:border-ink-800 p-6 hover:border-accent-500/50 transition-colors"
