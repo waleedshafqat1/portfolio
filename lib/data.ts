@@ -834,6 +834,56 @@ export const servicePages = [
 ] as const;
 
 // ============================================================
+// INSIGHTS / BLOG — Articles that rank for how-to intent
+// ============================================================
+export const insights = [
+  {
+    slug: 'enterprise-reporting-migration',
+    title: 'Migrating Enterprise Reporting Off Third-Party Tools: What I Learned Over Two Years',
+    metaDescription: 'How to migrate reporting from Looker, Qlik, or third-party platforms to BigQuery and Looker Studio without losing data.',
+    excerpt: 'Moving 50+ reports across three regions taught me that migrations fail not because of technology, but because of data debt.',
+    publishedAt: '2024-06-01',
+    readTime: 12,
+    tags: ['Analytics', 'BigQuery', 'Migrations'],
+    relatedService: 'analytics-migration',
+    relatedCaseStudies: ['project-mercury-levis'],
+  },
+  {
+    slug: 'bot-traffic-filtering',
+    title: 'How to Catch Bot Traffic That Fools Your BI Filters',
+    metaDescription: 'Building a bot traffic scoring model to protect KPI accuracy when standard third-party filters fail.',
+    excerpt: 'Third-party bot detection misses sophisticated visitors that mimic human behavior. Here is how to build a hybrid scoring model.',
+    publishedAt: '2024-05-15',
+    readTime: 10,
+    tags: ['Analytics', 'Data Quality', 'Python'],
+    relatedService: 'analytics-migration',
+    relatedCaseStudies: ['levis-bot-scoring-model'],
+  },
+  {
+    slug: 'last-touch-attribution-bigquery',
+    title: 'Last-Touch Attribution Across Web and App in BigQuery',
+    metaDescription: 'How to build unified attribution reporting across web and mobile app traffic in BigQuery.',
+    excerpt: 'Attribution is marketing favorite lie until you have traffic across web, app, email, and offline. Here is the pragmatic approach.',
+    publishedAt: '2024-04-20',
+    readTime: 13,
+    tags: ['Analytics', 'BigQuery', 'Attribution'],
+    relatedService: 'marketing-analytics',
+    relatedCaseStudies: ['levis-last-touch-channel'],
+  },
+  {
+    slug: 'power-bi-vs-tableau-vs-looker',
+    title: 'Power BI vs. Looker Studio vs. Tableau: How I Actually Choose',
+    metaDescription: 'Comparison of Power BI, Tableau, and Looker Studio. Which tool should you actually use?',
+    excerpt: 'Everyone asks which tool is best. The answer is: depends. Here is my decision framework for choosing the right BI tool.',
+    publishedAt: '2024-03-30',
+    readTime: 11,
+    tags: ['BI Tools', 'Dashboard Design', 'Decisions'],
+    relatedService: 'bi-dashboards',
+    relatedCaseStudies: [],
+  },
+] as const;
+
+// ============================================================
 // NAVIGATION
 // ============================================================
 export const navLinks = [
