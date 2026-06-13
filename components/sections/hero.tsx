@@ -108,9 +108,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-6 text-base text-ink-600 dark:text-ink-400 max-w-xl leading-relaxed"
           >
-            {years}+ years delivering BI dashboards, analytics insights and
-            ML models for enterprise clients including Levis, AstraZeneca and Toyota.
-            Top Rated on Upwork with 100% client satisfaction.
+            I&apos;ve built dashboards, forecasts and ML models for enterprise clients on three continents. Levis. AstraZeneca. Toyota. Mostly retail and pharma. Top Rated on Upwork, 100% job success.
           </motion.p>
 
           {/* CTAs */}

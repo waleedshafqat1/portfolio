@@ -58,10 +58,10 @@ export const site = {
 // ============================================================
 export const heroTaglines = [
   'architecting dashboards executives actually use',
-  'turning messy data into strategic clarity',
+  'pulling signals from noise in enterprise data',
   'delivering BI insights that drive real decisions',
   'building forecasting models that move revenue',
-  'shipping ML solutions for enterprise clients',
+  'shipping data systems that scale',
 ];
 
 // ============================================================
@@ -83,56 +83,56 @@ export const services = [
     icon: 'LayoutDashboard',
     title: 'BI Dashboards & Reporting',
     description:
-      'Enterprise dashboards spanning Product Performance, Market Comparison, Business Analytics and Marketing Reporting — built in Power BI, Tableau and Looker Studio and tied to real decisions.',
+      'Dashboards executives actually open. I use Power BI, Tableau or Looker Studio depending on your stack.',
     tags: ['Power BI', 'Tableau', 'Looker Studio'],
   },
   {
     icon: 'Workflow',
     title: 'Analytics Migration & Automation',
     description:
-      'Move CVM, reporting and ETL pipelines to modern stacks — BigQuery, Azure and automation-first.',
+      'Migrate reporting, ETL and CDP off legacy platforms. Land on BigQuery, Azure or Snowflake and own it.',
     tags: ['BigQuery', 'Azure', 'Power Automate'],
   },
   {
     icon: 'Activity',
     title: 'Marketing & User Journey Analytics',
     description:
-      'Google Analytics, GTM and funnel analysis to connect marketing spend to revenue outcomes.',
+      'GA4 setup, funnel analysis and attribution. Connect spend to outcomes. Find where your revenue comes from.',
     tags: ['GA4', 'GTM', 'Funnel Metrics'],
   },
   {
     icon: 'Bot',
     title: 'AI Chatbots & Assistants',
     description:
-      'Custom AI-powered chatbots and assistants built on LLMs — for customer support, internal tools and workflow automation.',
+      'RAG chatbots grounded in your data. No hallucinations. I build integration with Slack, email, APIs.',
     tags: ['OpenAI', 'LangChain', 'RAG', 'Python'],
   },
   {
     icon: 'LineChart',
     title: 'Forecasting & Predictive Modeling',
     description:
-      'Revenue forecasts, demand planning and time-series models for retail and e-commerce at scale.',
+      'Revenue forecasts and demand models that run weekly. Captures your data patterns instead of guesses.',
     tags: ['Python', 'ARIMA', 'Prophet', 'XGBoost'],
   },
   {
     icon: 'ShieldCheck',
     title: 'Risk & Credit Scoring Models',
     description:
-      'Credit risk models for banks and loan portfolios, built with validation-first ML pipelines.',
+      'Credit risk and fraud scoring for banks and lenders. Validation-first. Production-ready.',
     tags: ['Scikit-learn', 'Feature Engineering', 'A/B Testing'],
   },
   {
     icon: 'Brain',
     title: 'Custom ML Solutions',
     description:
-      'From segmentation to recommendation engines — production-ready models tailored to your data.',
+      'Customer segmentation, recommendation engines, churn prediction. Tailored to your data.',
     tags: ['k-means', 'Clustering', 'NLP'],
   },
   {
     icon: 'Globe',
     title: 'Web Development',
     description:
-      'Clean, fast, production-ready websites and web apps — from business sites to data-driven dashboards.',
+      'Next.js and React sites and apps. Built for speed and data. Dashboards, landing pages, tools.',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
   },
 ] as const;
