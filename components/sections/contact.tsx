@@ -12,6 +12,7 @@ import {
   CheckCircle2,
   AlertCircle,
   MessageCircle,
+  Sparkles,
 } from 'lucide-react';
 import { site } from '@/lib/data';
 
@@ -168,6 +169,13 @@ export function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-7"
           >
+            {/* Trust bar */}
+            <div className="mb-8 p-4 rounded-lg bg-accent-500/5 border border-accent-500/20 flex items-center gap-3">
+              <Sparkles className="h-4 w-4 text-accent-500 shrink-0" />
+              <p className="text-xs font-medium text-ink-700 dark:text-ink-300">
+                Top Rated on Upwork · 100% Job Success · 7+ years · Enterprise clients
+              </p>
+            </div>
             <div className="card-base p-8 md:p-10">
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">

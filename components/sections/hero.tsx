@@ -125,15 +125,23 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-12 pt-8 border-t border-ink-200 dark:border-ink-800 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-ink-500"
+            className="mt-12 pt-8 border-t border-ink-200 dark:border-ink-800"
           >
-            <div className="flex items-center gap-2">
-              <Sparkles className="h-3.5 w-3.5 text-accent-500" />
-              <span>Top Rated on Upwork</span>
+            <div className="text-xs font-mono uppercase tracking-widest text-ink-500 mb-3">
+              Trusted by
             </div>
-            <div>100% Job Success</div>
-            <div>Enterprise Clients</div>
-            <div>MSc · RMIT Australia</div>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-medium text-ink-900 dark:text-ink-50">
+              <div className="flex items-center gap-2">
+                <Sparkles className="h-3.5 w-3.5 text-accent-500" />
+                <span>Top Rated on Upwork</span>
+              </div>
+              <span className="text-ink-300">·</span>
+              <div>100% Job Success</div>
+              <span className="text-ink-300">·</span>
+              <div>{years}+ years</div>
+              <span className="text-ink-300">·</span>
+              <div>Enterprise clients on 3 continents</div>
+            </div>
           </motion.div>
         </div>
 
