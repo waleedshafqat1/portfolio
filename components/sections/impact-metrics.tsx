@@ -13,12 +13,14 @@ function Counter({
   suffix?: string;
   prefix?: string;
 }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: '-100px' });
 
   useEffect(() => {
-    if (!inView) return;
+    if (!inView || hasAnimated) return;
+    setHasAnimated(true);
     const duration = 1800;
     const start = performance.now();
     const tick = (now: number) => {
@@ -31,10 +33,10 @@ function Counter({
       else setCount(target);
     };
     requestAnimationFrame(tick);
-  }, [inView, target]);
+  }, [inView, target, hasAnimated]);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} data-value={target}>
       {prefix}
       {count}
       {suffix}
