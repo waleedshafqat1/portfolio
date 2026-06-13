@@ -110,13 +110,13 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-10 flex flex-wrap gap-4"
           >
-            <Link href="#work" className="btn-primary group">
+            <Link href="/book" className="btn-primary group">
+              <Calendar className="h-4 w-4" />
+              Book a Call
+            </Link>
+            <Link href="#work" className="btn-secondary group">
               View My Work
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link href="#contact" className="btn-secondary">
-              <Calendar className="h-4 w-4" />
-              Let&apos;s Talk
             </Link>
           </motion.div>
 

@@ -141,8 +141,8 @@ export default function CaseStudyPage({ params }: Props) {
             I bring the same rigor and outcome-focus to every engagement —
             from enterprise clients to focused startup work.
           </p>
-          <Link href="/#contact" className="btn-primary">
-            Start a conversation
+          <Link href="/book" className="btn-primary">
+            Book a call
           </Link>
         </div>
       </div>
