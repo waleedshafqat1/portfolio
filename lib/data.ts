@@ -902,7 +902,7 @@ export const insights = [
 export const homepageFAQ = [
   {
     question: 'How do you work with clients who have data under NDA?',
-    answer: 'Everything is confidential by default. I don\'t share client data, metrics or approaches without written permission. In case studies, I anonymize or generalize. Your data stays yours.',
+    answer: 'Everything is confidential by default. I don\'t share client data, metrics or approaches without written permission. Your data stays yours.',
   },
   {
     question: 'What does a typical engagement look like, and how long does it take?',
@@ -914,7 +914,7 @@ export const homepageFAQ = [
   },
   {
     question: 'Which time zones do you cover?',
-    answer: 'I\'m based in Lahore, Pakistan. I work across APAC (Singapore, Australia, India), EU (UK, Germany) and US time zones. I\'m online 6am-10pm Pakistan time, which covers most business hours across these regions.',
+    answer: 'I already work with clients all around the globe. I\'m fully flexible with any hours. Based in Lahore, Pakistan, but I adjust my schedule to match your timezone and working preferences.',
   },
   {
     question: 'Can you work with our existing BigQuery / Power BI / Azure setup?',
