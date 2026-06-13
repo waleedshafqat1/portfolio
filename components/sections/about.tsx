@@ -72,7 +72,7 @@ export function About() {
                 I started as a computer science student with an unusual conviction: that data was going to matter more than most people realized. A decade later, I&apos;m building the models, pipelines, dashboards, and analytics systems that drive enterprise decisions across three continents.
               </p>
               <p>
-                My work spans the full data science and analytics spectrum — from machine learning models and forecasting systems in production, to BI dashboards executives actually open, to data pipelines and migrations that modernise how organisations manage their data. I&apos;ve delivered across retail, pharmaceutical, automotive finance, and microfinance, for enterprise and independent clients.
+                My work spans the full data science and analytics spectrum — from machine learning models and forecasting systems in production, to BI dashboards executives actually open, to data pipelines and migrations that modernise how organisations manage their data. I&apos;ve delivered across retail, pharmaceutical, automotive finance, and microfinance, with clients including Levis, AstraZeneca, and Toyota.
               </p>
               <p className="text-ink-900 dark:text-ink-100 font-medium">
                 I don&apos;t do work for its own sake. Every project I take on answers one question: <em>what decision, outcome, or capability does this unlock?</em>

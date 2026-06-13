@@ -19,7 +19,7 @@ export const site = {
   name: 'Waleed Shafqat',
   title: 'Waleed Shafqat — Senior Analytics & Data Science Consultant',
   description:
-    'Senior Analytics & Data Science Consultant with 7+ years delivering BI dashboards, analytics solutions and predictive models for enterprise clients across retail, pharmaceutical, and automotive sectors. Top Rated on Upwork with 100% client satisfaction.',
+    'Senior Analytics & Data Science Consultant with 7+ years delivering BI dashboards, analytics solutions and predictive models for enterprise clients including Levis, AstraZeneca, and Toyota. Top Rated on Upwork with 100% client satisfaction.',
   url: 'https://www.waleedshafqat.com',
   keywords: [
     'Data Scientist',
@@ -545,6 +545,9 @@ export const employers = [
 // PROJECTS — Organisations behind the work (enterprise via employer + direct Upwork)
 // ============================================================
 export const projectOrgs = [
+  { name: "Levis",                  industry: 'Retail',            logo: '/logos/levis.png' },
+  { name: 'AstraZeneca',             industry: 'Pharmaceutical',    logo: '/logos/astrazeneca.png' },
+  { name: 'Toyota',                  industry: 'Automotive',        logo: '/logos/toyota.png' },
   { name: 'Positive Minds Gippsland', industry: 'Healthcare',       logo: '/logos/positive-minds.png' },
   { name: 'JWE Group',               industry: 'IT Consulting',     logo: '/logos/jwe-logo-full.png' },
   { name: 'Estliving',               industry: 'Real Estate',       logo: '/logos/estliving.png' },
