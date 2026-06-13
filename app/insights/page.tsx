@@ -1,12 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { insights } from '@/lib/data';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Insights',
-  description: 'Articles on analytics, data science, and building data products. Real experience, first-person voice.',
-};
 
 export default function InsightsPage() {
   const sortedInsights = [...insights].sort(

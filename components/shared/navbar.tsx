@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X, Download, Calendar } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -11,31 +12,13 @@ import { cn } from '@/lib/utils';
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  useEffect(() => {
-    const sectionIds = navLinks.map((l) => l.href.replace('#', ''));
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActiveSection(entry.target.id);
-        });
-      },
-      // Trigger when a section occupies the middle band of the viewport
-      { rootMargin: '-20% 0px -60% 0px', threshold: 0 }
-    );
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-    return () => observer.disconnect();
   }, []);
 
   return (
@@ -62,7 +45,7 @@ export function Navbar() {
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) => {
-            const isActive = activeSection === link.href.replace('#', '');
+            const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
             return (
               <Link
                 key={link.href}
@@ -88,6 +71,13 @@ export function Navbar() {
 
         {/* Right actions */}
         <div className="flex items-center gap-3">
+          <Link
+            href="/book"
+            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-accent-500 text-white hover:bg-accent-600 transition-all"
+          >
+            <Calendar className="h-3.5 w-3.5" />
+            Book a Call
+          </Link>
           <a
             href="/resume.pdf"
             download
@@ -115,8 +105,16 @@ export function Navbar() {
           className="lg:hidden glass border-t border-ink-200/50 dark:border-ink-800/50"
         >
           <div className="container-page py-6 flex flex-col gap-1">
+            <Link
+              href="/book"
+              onClick={() => setMobileOpen(false)}
+              className="py-3 px-4 mb-2 rounded-lg bg-accent-500 text-white font-medium text-lg hover:bg-accent-600 transition-colors"
+            >
+              <Calendar className="h-4 w-4 inline mr-2" />
+              Book a Call
+            </Link>
             {navLinks.map((link) => {
-              const isActive = activeSection === link.href.replace('#', '');
+              const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
               return (
                 <Link
                   key={link.href}

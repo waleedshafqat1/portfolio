@@ -1017,12 +1017,10 @@ export const serviceFAQs: Record<string, typeof homepageFAQ> = {
 // NAVIGATION
 // ============================================================
 export const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Work', href: '#work' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/services' },
+  { label: 'Work', href: '/work' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ] as const;
 
 // ============================================================

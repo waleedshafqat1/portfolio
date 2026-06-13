@@ -1,16 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { servicePages } from '@/lib/data';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Analytics & Data Science Services | Waleed Shafqat',
-  description: 'BI dashboards, analytics migration, forecasting, AI chatbots, marketing analytics and web development — services delivered for enterprise and independent clients.',
-  keywords: ['data analytics services', 'data science consulting services', 'BI consulting services', 'analytics consulting', 'freelance analytics services', 'data consultant for hire'],
-  alternates: {
-    canonical: '/services',
-  },
-};
 
 export default function ServicesPage() {
   return (
