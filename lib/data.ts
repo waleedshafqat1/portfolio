@@ -494,7 +494,7 @@ export const caseStudies = [
       'Built the company website entirely from scratch using Next.js 14, TypeScript, and Tailwind CSS — 48 fully responsive pages including service pages, project case studies, and team profiles, deployed to Vercel. Migrated all email accounts to Microsoft 365, including manual migration of alias accounts with full archive preservation. Transferred domain ownership from a former IT contractor and resolved all DNS conflicts. Implemented enterprise-grade security hardening including a comprehensive Content Security Policy, HSTS, security headers, and self-hosted fonts.',
     outcome:
       'A live production website scoring 98/100 on performance, A-grade security, and 95+/100 on accessibility. A fully operational Microsoft 365 environment with zero data loss and reduced licensing costs. Full domain ownership returned to the client. Security audit requirements met for the enterprise client relationship.',
-    url: '',
+    url: 'https://jwegroup.com.au',
     featured: true,
   },
   {
