@@ -70,9 +70,9 @@ export default function ContactPage() {
                     <div className="h-14 w-14 rounded-xl bg-accent-500/10 flex items-center justify-center mb-6 group-hover:bg-accent-500/20 transition-colors text-accent-500">
                       <Calendar className="h-6 w-6" />
                     </div>
-                    <h3 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors">
+                    <h2 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors">
                       Book a Call
-                    </h3>
+                    </h2>
                     <p className="text-ink-600 dark:text-ink-400 mb-6 flex-grow">
                       Schedule a 20-minute intro call. No sales pitch—just an honest conversation about your challenge.
                     </p>
@@ -97,9 +97,9 @@ export default function ContactPage() {
                     <div className="h-14 w-14 rounded-xl bg-accent-500/10 flex items-center justify-center mb-6 group-hover:bg-accent-500/20 transition-colors text-accent-500">
                       <Mail className="h-6 w-6" />
                     </div>
-                    <h3 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors">
+                    <h2 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors">
                       Send Email
-                    </h3>
+                    </h2>
                     <p className="text-ink-600 dark:text-ink-400 mb-6 flex-grow">
                       Detailed message with project context? I'll get back to you within 24 hours.
                     </p>
@@ -128,9 +128,9 @@ export default function ContactPage() {
                     <div className="h-14 w-14 rounded-xl bg-accent-500/10 flex items-center justify-center mb-6 group-hover:bg-accent-500/20 transition-colors text-accent-500">
                       <MessageCircle className="h-6 w-6" />
                     </div>
-                    <h3 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors">
+                    <h2 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors">
                       WhatsApp
-                    </h3>
+                    </h2>
                     <p className="text-ink-600 dark:text-ink-400 mb-6 flex-grow">
                       Quick urgent inquiry? Hit me up on WhatsApp for a faster response.
                     </p>

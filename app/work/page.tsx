@@ -78,6 +78,7 @@ export default function WorkPage() {
           <div className="flex flex-wrap gap-3">
             <button
               onClick={() => setSelectedIndustry(null)}
+              aria-label="Show all case studies"
               className={`relative px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                 selectedIndustry === null
                   ? 'bg-accent-500 text-white shadow-lg shadow-accent-500/30'
@@ -90,6 +91,7 @@ export default function WorkPage() {
               <button
                 key={industry}
                 onClick={() => setSelectedIndustry(industry)}
+                aria-label={`Filter case studies by ${industry}`}
                 className={`relative px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                   selectedIndustry === industry
                     ? 'bg-accent-500 text-white shadow-lg shadow-accent-500/30'
@@ -131,9 +133,9 @@ export default function WorkPage() {
                         <span className="text-xs font-mono text-ink-500">{study.duration}</span>
                       </div>
 
-                      <h3 className="font-display text-xl text-ink-900 dark:text-ink-50 group-hover:text-accent-500 transition-colors mb-3 line-clamp-2">
+                      <h2 className="font-display text-xl text-ink-900 dark:text-ink-50 group-hover:text-accent-500 transition-colors mb-3 line-clamp-2">
                         {study.title}
-                      </h3>
+                      </h2>
 
                       <p className="text-sm text-ink-600 dark:text-ink-400 leading-relaxed mb-6 flex-grow">
                         {study.summary}
@@ -211,6 +213,9 @@ export default function WorkPage() {
                       <img
                         src={org.logo}
                         alt={org.name}
+                        width={40}
+                        height={40}
+                        loading="lazy"
                         className="h-10 mb-4 object-contain opacity-70 group-hover:opacity-100 transition-opacity"
                       />
                     )}

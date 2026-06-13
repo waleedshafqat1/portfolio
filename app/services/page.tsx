@@ -103,9 +103,9 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Text content */}
-                    <h3 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors duration-300">
+                    <h2 className="font-display text-xl text-ink-900 dark:text-ink-50 mb-3 group-hover:text-accent-500 transition-colors duration-300">
                       {service.headline}
-                    </h3>
+                    </h2>
                     <p className="text-sm text-ink-600 dark:text-ink-400 leading-relaxed mb-6 flex-grow">
                       {service.intro}
                     </p>
