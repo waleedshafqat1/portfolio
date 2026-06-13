@@ -16,8 +16,7 @@ export function Footer() {
               Waleed<span className="text-accent-500">.</span>
             </Link>
             <p className="mt-4 text-ink-600 dark:text-ink-400 max-w-md leading-relaxed">
-              Senior Data Scientist & Analytics Consultant turning complex data
-              into strategic clarity for enterprise clients and ambitious teams.
+              I build the dashboards, models and pipelines that enterprise teams actually run decisions on. Seven years, three continents, mostly retail and pharma.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a

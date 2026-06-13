@@ -432,10 +432,10 @@ For `llms-full.txt`, concatenate the full markdown text of each service page, ca
 **Acceptance criteria:** securityheaders.com grade A or better with no broken functionality.
 
 ---
+# P3 Onwards
 
 # Copy & Humanization Standard
 
-Read this before editing or writing any user-facing text. The brief asked for copy that reads human, not AI. Here is how to guarantee that.
 
 ## The AI tells currently on your site, and what to do
 
@@ -446,6 +446,8 @@ Read this before editing or writing any user-facing text. The brief asked for co
 3. **Consultant-ese abstractions.** "Turning complex data into strategic clarity" (in your footer) is the kind of line that says nothing. Replace abstractions with specifics: a number, a tool, a named outcome. "Strategic clarity" → "a forecast the merchandising team actually plans against."
 
 4. **"Grounded in real client work," "from the trenches," "that matters."** These are fine in moderation but you use a few of them. One signature phrase is voice; three is a pattern. Keep "from the trenches" if you like it, cut the others.
+
+5. Remove "," right before any "and" word or "or" word. Human don't use it and AI often does.
 
 ## Rules for human copy
 

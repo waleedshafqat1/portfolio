@@ -48,9 +48,7 @@ export function Services() {
             <span className="italic text-gradient">build for you</span>
           </h2>
           <p className="mt-6 text-ink-600 dark:text-ink-400 leading-relaxed">
-            From BI dashboards and AI chatbots to predictive models and
-            full websites — each service is grounded in real client work,
-            enterprise and independent alike.
+            Everything here is work I've shipped for real clients, not a service menu I padded out. Some of it was enterprise work through Lynx. Some I delivered solo on Upwork. Pick what fits your problem.
           </p>
         </div>
 
