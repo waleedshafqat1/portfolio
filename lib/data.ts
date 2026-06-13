@@ -637,6 +637,203 @@ export const testimonials = [
 ] as const;
 
 // ============================================================
+// SERVICE PAGES — Dedicated, indexable service detail pages
+// ============================================================
+export const servicePages = [
+  {
+    slug: 'bi-dashboards',
+    title: 'BI Dashboards & Reporting Consultant',
+    metaDescription: 'Power BI, Tableau, and Looker Studio dashboards for enterprise teams. Dashboards executives actually open.',
+    headline: 'BI Dashboards & Reporting',
+    intro:
+      'I build dashboards executives open every morning, not the kind that get made once and forgotten. Power BI, Tableau or Looker Studio, depending on where your data already lives. The test I hold every report to: what decision does this change?',
+    problem:
+      'Most dashboards fail silently. Teams build them in isolation, hand them off, and they gather dust. Or they get opened, but nobody trusts the numbers. Or they\'re so slow and fragile that one schema change breaks everything.',
+    whatYouGet: [
+      'A dashboard tied to a real decision (not just metrics for metrics\' sake)',
+      'Performance-optimized queries and cached data layers',
+      'A maintenance-first design so you can own updates without breaking things',
+      'One-page snapshot + drill-through depth for stakeholders at every level',
+    ],
+    relatedCaseStudies: ['project-mercury-levis', 'levis-last-touch-channel', 'pharma-market-dashboards'],
+    faq: [
+      {
+        question: 'Which tool should we choose: Power BI, Tableau, or Looker Studio?',
+        answer: 'It depends on where your data lives and your licensing constraints. If you\'re on Azure/Microsoft, Power BI is often the natural fit. If you need maximum interactivity and don\'t mind premium pricing, Tableau. If you\'re Google-native or cost-conscious, Looker Studio. I\'ve shipped in all three; the right choice is the one your team can maintain.',
+      },
+      {
+        question: 'How long does a dashboard build typically take?',
+        answer: 'A single-dashboard engagement is usually 4–6 weeks: data exploration, design, build, review, refinement. Multi-dashboard migrations or complex federated setups take 3–6 months. I\'ll give you a clear timeline after understanding your data.',
+      },
+      {
+        question: 'Do you handle data infrastructure, or just the dashboard layer?',
+        answer: 'I can build a dashboard on top of whatever you have (SQL Server, BigQuery, Salesforce, Excel). If your data layer is messy, I can help there too, but that\'s a separate engagement.',
+      },
+    ],
+  },
+  {
+    slug: 'analytics-migration',
+    title: 'Analytics Migration & Stack Modernization Consultant',
+    metaDescription: 'Migrate reporting and ETL pipelines to BigQuery, Azure, or modern stacks. Keep data integrity, reduce costs.',
+    headline: 'Analytics Migration & Modernization',
+    intro:
+      'Moving off fragmented reporting systems, outdated tools, or expensive third-party platforms is one of the highest-ROI projects a data team can take on. I\'ve led two-year enterprise migrations. I know where the hidden costs and risks are, and how to move without losing data or trust.',
+    problem:
+      'Legacy reporting stacks are expensive, rigid, and painful. You\'re on multiple platforms (Looker, Qlik, hand-built spreadsheets) with no single source of truth. Migrations scare you because the last one cost months and broke things.',
+    whatYouGet: [
+      'A migration plan that treats data consistency as non-negotiable',
+      'End-to-end ETL rebuild in your target stack (BigQuery, Azure, Snowflake, etc.)',
+      'Reconciliation and validation at every step so you know data is correct',
+      'Training so your team owns the new stack post-migration',
+      'A data governance foundation so the next migration is easier',
+    ],
+    relatedCaseStudies: ['project-mercury-levis', 'global-apparel-forecasting'],
+    faq: [
+      {
+        question: 'How do you handle data validation during a migration?',
+        answer: 'Every field is reconciled row-by-row against the source. Row counts, sums, dates, null patterns — all verified before cutover. I build automated tests so you can re-run them post-launch.',
+      },
+      {
+        question: 'What if we\'re using multiple data sources?',
+        answer: 'That\'s actually the norm. I design a unified ingestion layer that pulls from Salesforce, Google Analytics, your data warehouse, and custom APIs. The work is in the orchestration and conflict resolution, not the ingestion itself.',
+      },
+      {
+        question: 'Can we run old and new stacks in parallel during migration?',
+        answer: 'Yes, and often essential for large teams. We can run both for weeks or months, gradually shifting reports and stakeholders over while old reports stay live.',
+      },
+    ],
+  },
+  {
+    slug: 'predictive-modeling',
+    title: 'Forecasting & Predictive Modeling Consultant',
+    metaDescription: 'Revenue forecasts, demand planning, time-series models for retail and e-commerce. Models that ship to production.',
+    headline: 'Forecasting & Predictive Modeling',
+    intro:
+      'The difference between guessing and forecasting is a model that captures your data\'s patterns and tells you what to expect. I build production-grade forecast and risk models tuned to your business: revenue, demand, churn, attrition.',
+    problem:
+      'Spreadsheet forecasts become outdated the moment they\'re made. Forecasts built by consultants live in a deck, not in your daily decision-making. You need something you trust, update weekly, and can act on.',
+    whatYouGet: [
+      'A production model updated automatically from your data source',
+      'Weekly/monthly forecasts with confidence intervals so you know the range',
+      'Explainability: which factors drive the forecast, not a black box',
+      'Tuning to your business: seasonal patterns, trend breaks, anomalies',
+      'Integration into your BI layer so forecasts live next to actuals',
+    ],
+    relatedCaseStudies: ['global-apparel-forecasting', 'levis-bot-scoring-model'],
+    faq: [
+      {
+        question: 'How much historical data do I need?',
+        answer: 'Time-series models need at least 2 years of clean data to capture seasonality. More is better. If you have less, we can use external data or simpler approaches.',
+      },
+      {
+        question: 'What happens when business changes (a new product launch, a crisis)?',
+        answer: 'Good models degrade gracefully but don\'t auto-correct for regime changes. We build in manual override layers and re-train quarterly with new patterns.',
+      },
+      {
+        question: 'Do you build neural nets / deep learning models?',
+        answer: 'Only when they\'re necessary. 90% of forecasting problems are solved better with classical time-series (ARIMA, Prophet) or gradient boosting. I choose the simplest model that works.',
+      },
+    ],
+  },
+  {
+    slug: 'ai-chatbots',
+    title: 'RAG Chatbot & AI Assistant Developer',
+    metaDescription: 'Custom AI chatbots and assistants built on LLMs. For customer support, internal tools, and workflow automation.',
+    headline: 'AI Chatbots & Assistants',
+    intro:
+      'LLMs are powerful but unreliable when you need them to answer questions about *your* data without hallucinating. I build retrieval-augmented generation (RAG) systems that ground LLMs in your knowledge base, so they answer accurately.',
+    problem:
+      'Off-the-shelf ChatGPT integrations make up answers. Fine-tuned models are expensive and fragile. You need a chatbot that knows your docs, your customer FAQs, your product, and doesn\'t BS.',
+    whatYouGet: [
+      'A RAG system that retrieves from your documents before answering',
+      'Grounding in your data so no hallucinations about your product',
+      'Fast iteration cycles: update docs, the chatbot updates automatically',
+      'Multi-format ingestion: PDFs, web pages, databases, Slack history',
+      'Conversation memory and context so it feels natural',
+    ],
+    relatedCaseStudies: ['pharma-market-dashboards'],
+    faq: [
+      {
+        question: 'What\'s RAG and why is it better than fine-tuning?',
+        answer: 'RAG retrieves relevant documents at query time, so the model answers based on your actual data, not memorized training. It\'s faster to update, cheaper, and doesn\'t require retraining.',
+      },
+      {
+        question: 'Can it integrate with our existing systems?',
+        answer: 'Yes. Slack, email, customer portals, internal tools—I can build the integration layer. The chatbot can query your databases, pull from Salesforce, check inventory in real time.',
+      },
+      {
+        question: 'How do you prevent it from confidently giving wrong answers?',
+        answer: 'Confidence scoring, retrieval quality checks, and user feedback loops. We log queries it doesn\'t have good answers for and retrain. It also knows when to say "I don\'t know."',
+      },
+    ],
+  },
+  {
+    slug: 'marketing-analytics',
+    title: 'GA4 & Marketing Attribution Consultant',
+    metaDescription: 'Google Analytics 4, GTM setup, funnel analysis, and marketing attribution. Connect spend to revenue outcomes.',
+    headline: 'Marketing Analytics & Attribution',
+    intro:
+      'Marketing loves to claim credit. Attribution is how you actually know which channels drive value. GA4 is powerful but confusing. I help you set up tracking that you can trust, then build dashboards that answer: where is revenue coming from?',
+    problem:
+      'GA4 is a maze. You have events firing but no idea if they\'re right. Attribution is "first-touch" by default (wrong for most businesses). You\'re flying blind on channel performance.',
+    whatYouGet: [
+      'Clean GA4 implementation with proper event tracking and data layers',
+      'Google Tag Manager setup so you can update tags without code changes',
+      'Custom reporting: last-touch, multi-touch, time-decay attribution models',
+      'Funnel analysis showing where visitors drop off and why',
+      'Dashboards connecting spend to revenue by channel and campaign',
+    ],
+    relatedCaseStudies: ['estliving-digital-analytics', 'levis-last-touch-channel'],
+    faq: [
+      {
+        question: 'How do you handle cross-device and offline attribution?',
+        answer: 'GA4 uses first-party data and cross-domain tracking. For offline, we connect CRM or backend conversion data to GA4 via user IDs. Full cross-device requires something like customer data platforms (CDPs).',
+      },
+      {
+        question: 'Which attribution model should we use?',
+        answer: 'Depends on your business. E-commerce often uses time-decay or position-based. SaaS usually last-touch or multi-touch. We\'ll test models against your data and pick the one that correlates to actual ROI.',
+      },
+      {
+        question: 'How often should we audit our tracking?',
+        answer: 'After major changes (new products, traffic sources, site redesigns). Otherwise, quarterly audits catch drift. I recommend monthly spot-checks.',
+      },
+    ],
+  },
+  {
+    slug: 'web-development',
+    title: 'Next.js Developer & Data Web App Builder',
+    metaDescription: 'Production-ready Next.js websites and data-driven web apps. Fast, modern, SEO-friendly.',
+    headline: 'Web Development & Data Apps',
+    intro:
+      'Modern web apps need to be fast, live on real data, and rank on search engines. I build with Next.js, TypeScript, and Tailwind—the modern stack. From marketing sites to interactive dashboards and data apps.',
+    problem:
+      'WordPress and no-code tools are slow and inflexible. Hiring a full-time engineer is expensive. You need a web presence that performs, ranks, and scales.',
+    whatYouGet: [
+      'A fast, modern site built in Next.js (98+ Lighthouse performance)',
+      'SEO-optimized from the ground up (schema, canonical, meta, sitemaps)',
+      'Interactive dashboards and data visualizations if you need them',
+      'Deployed to Vercel: 99.95% uptime, automatic scaling, edge caching',
+      'Analytics and monitoring so you know what\'s working',
+    ],
+    relatedCaseStudies: ['positive-minds-gippsland', 'jwe-group-it-engagement'],
+    faq: [
+      {
+        question: 'Is Next.js overkill for a brochure site?',
+        answer: 'Not anymore. Next.js is so fast and has great DX that it\'s my default for anything from a simple site to a complex app. The learning curve is small, the benefits are huge.',
+      },
+      {
+        question: 'Can you integrate with our CMS or backend?',
+        answer: 'Yes. Headless CMS (Contentful, Strapi), your own API, databases, anything with a REST or GraphQL endpoint. Next.js is API-agnostic.',
+      },
+      {
+        question: 'What about maintenance and updates after launch?',
+        answer: 'I hand over clean, well-documented code. You can maintain it yourself or I offer retainer-based support: small fixes, performance optimizations, feature additions.',
+      },
+    ],
+  },
+] as const;
+
+// ============================================================
 // NAVIGATION
 // ============================================================
 export const navLinks = [

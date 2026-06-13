@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
   LineChart,
@@ -13,6 +14,17 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { services } from '@/lib/data';
+
+const serviceSlugMap: Record<string, string> = {
+  'BI Dashboards & Reporting': 'bi-dashboards',
+  'Analytics Migration & Automation': 'analytics-migration',
+  'Marketing & User Journey Analytics': 'marketing-analytics',
+  'Forecasting & Predictive Modeling': 'predictive-modeling',
+  'AI Chatbots & Assistants': 'ai-chatbots',
+  'Web Development': 'web-development',
+  'Risk & Credit Scoring Models': 'predictive-modeling',
+  'Custom ML Solutions': 'predictive-modeling',
+};
 
 const iconMap: Record<string, LucideIcon> = {
   LineChart,
@@ -45,6 +57,9 @@ export function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => {
             const Icon = iconMap[service.icon];
+            const slug = serviceSlugMap[service.title];
+            const Component = slug ? Link : 'div';
+            const componentProps = slug ? { href: `/services/${slug}` } : {};
             return (
               <motion.div
                 key={service.title}
@@ -52,8 +67,12 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ delay: i * 0.08 }}
-                className="group relative card-base p-6 md:p-8 hover:border-accent-500 transition-all duration-300 overflow-hidden"
+                asChild
               >
+                <Component
+                  {...componentProps}
+                  className="group relative card-base p-6 md:p-8 hover:border-accent-500 transition-all duration-300 overflow-hidden"
+                >
                 {/* Hover gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/0 to-accent-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -87,6 +106,7 @@ export function Services() {
                   <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-accent-500/50 to-transparent" />
                   <div className="absolute top-0 right-0 h-px w-full bg-gradient-to-l from-accent-500/50 to-transparent" />
                 </div>
+                </Component>
               </motion.div>
             );
           })}
