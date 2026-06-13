@@ -30,6 +30,9 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: site.title,
     template: `%s — ${site.name}`,

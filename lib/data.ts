@@ -8,7 +8,7 @@ export const site = {
   title: 'Waleed Shafqat — Senior Analytics & Data Science Consultant',
   description:
     'Senior Analytics & Data Science Consultant with 6+ years delivering BI dashboards, analytics solutions and predictive models for Levis, AstraZeneca and Toyota. Top Rated on Upwork with 100% client satisfaction.',
-  url: 'https://waleedshafqat.com', // Update after domain purchase
+  url: 'https://www.waleedshafqat.com',
   keywords: [
     'Data Scientist',
     'Data Analyst',
