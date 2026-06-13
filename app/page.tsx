@@ -8,6 +8,7 @@ import { Clients } from '@/components/sections/clients';
 import { Experience } from '@/components/sections/experience';
 import { Education } from '@/components/sections/education';
 import { Testimonials } from '@/components/sections/testimonials';
+import { DiscoveryAuditCTA } from '@/components/sections/discovery-audit-cta';
 import { Contact } from '@/components/sections/contact';
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Clients />
       <Experience />
       <Testimonials />
+      <DiscoveryAuditCTA />
       <About />
       <Education />
       <Contact />
