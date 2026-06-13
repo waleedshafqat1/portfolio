@@ -10,6 +10,7 @@ import { Education } from '@/components/sections/education';
 import { Testimonials } from '@/components/sections/testimonials';
 import { DiscoveryAuditCTA } from '@/components/sections/discovery-audit-cta';
 import { FAQ } from '@/components/sections/faq';
+import { EngagementModels } from '@/components/sections/engagement-models';
 import { Contact } from '@/components/sections/contact';
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <About />
       <Education />
       <FAQ />
+      <EngagementModels />
       <Contact />
     </>
   );
