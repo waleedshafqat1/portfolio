@@ -11,6 +11,7 @@ import {
   Briefcase,
   CheckCircle2,
   AlertCircle,
+  MessageCircle,
 } from 'lucide-react';
 import { site } from '@/lib/data';
 
@@ -94,6 +95,25 @@ export function Contact() {
                   </div>
                   <div className="text-ink-900 dark:text-ink-100">
                     {site.contact.phone}
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/61451466432?text=Hi%20Waleed,%20I%20saw%20your%20portfolio%20and%20wanted%20to%20ask%20about..."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-4 rounded-xl hover:bg-ink-100 dark:hover:bg-ink-900 transition-colors group"
+              >
+                <div className="h-10 w-10 rounded-lg bg-accent-500/10 flex items-center justify-center group-hover:bg-accent-500 transition-colors">
+                  <MessageCircle className="h-4 w-4 text-accent-500 group-hover:text-white transition-colors" />
+                </div>
+                <div>
+                  <div className="text-xs font-mono text-ink-500 uppercase tracking-widest">
+                    WhatsApp
+                  </div>
+                  <div className="text-ink-900 dark:text-ink-100">
+                    Message me
                   </div>
                 </div>
               </a>
