@@ -282,7 +282,7 @@ export const experience = [
 // ============================================================
 export const caseStudies = [
   {
-    slug: 'project-mercury-levis',
+    slug: 'enterprise-reporting-migration',
     title: 'Enterprise Reporting Migration — Multi-Region Retailer',
     client: "Enterprise Client (via Lynx Analytics)",
     industry: 'Retail',
@@ -300,7 +300,7 @@ export const caseStudies = [
     featured: true,
   },
   {
-    slug: 'levis-bot-scoring-model',
+    slug: 'bot-scoring-ecommerce',
     title: 'Bot Traffic Scoring Model for E-Commerce Reporting',
     client: "E-Commerce Client (via Lynx Analytics)",
     industry: 'Retail',
@@ -318,7 +318,7 @@ export const caseStudies = [
     featured: true,
   },
   {
-    slug: 'levis-last-touch-channel',
+    slug: 'attribution-reporting-multichannel',
     title: 'Multi-Channel Attribution Reporting — Web and App',
     client: "E-Commerce Client (via Lynx Analytics)",
     industry: 'Retail',
@@ -336,7 +336,7 @@ export const caseStudies = [
     featured: true,
   },
   {
-    slug: 'pharma-market-dashboards',
+    slug: 'pharma-market-analytics-platform',
     title: 'Market Tracking and Analytics Platform — Pharma',
     client: 'Pharmaceutical Client (via Lynx Analytics)',
     industry: 'Pharmaceutical',
@@ -354,7 +354,7 @@ export const caseStudies = [
     featured: true,
   },
   {
-    slug: 'astrazeneca-patient-model-tracker',
+    slug: 'model-submission-tracker-pharma',
     title: 'Model Submission and Tracking Platform — Pharma',
     client: 'Pharmaceutical Client (via Lynx Analytics)',
     industry: 'Pharmaceutical',
@@ -372,7 +372,7 @@ export const caseStudies = [
     featured: true,
   },
   {
-    slug: 'global-apparel-forecasting',
+    slug: 'demand-forecasting-apparel',
     title: 'Demand Forecasting and Assortment Optimization — Apparel',
     client: "Global Apparel Retailer (via Lynx Analytics)",
     industry: 'Retail',
@@ -665,7 +665,7 @@ export const servicePages: ServicePage[] = [
       'A maintenance-first design so you can own updates without breaking things',
       'One-page snapshot + drill-through depth for stakeholders at every level',
     ],
-    relatedCaseStudies: ['project-mercury-levis', 'levis-last-touch-channel', 'pharma-market-dashboards'],
+    relatedCaseStudies: ['enterprise-reporting-migration', 'attribution-reporting-multichannel', 'pharma-market-analytics-platform'],
     faq: [
       {
         question: 'Which tool should we choose: Power BI, Tableau, or Looker Studio?',
@@ -697,7 +697,7 @@ export const servicePages: ServicePage[] = [
       'Training so your team owns the new stack post-migration',
       'A data governance foundation so the next migration is easier',
     ],
-    relatedCaseStudies: ['project-mercury-levis', 'global-apparel-forecasting'],
+    relatedCaseStudies: ['enterprise-reporting-migration', 'demand-forecasting-apparel'],
     faq: [
       {
         question: 'How do you handle data validation during a migration?',
@@ -729,7 +729,7 @@ export const servicePages: ServicePage[] = [
       'Tuning to your business: seasonal patterns, trend breaks, anomalies',
       'Integration into your BI layer so forecasts live next to actuals',
     ],
-    relatedCaseStudies: ['global-apparel-forecasting', 'levis-bot-scoring-model'],
+    relatedCaseStudies: ['demand-forecasting-apparel', 'bot-scoring-ecommerce'],
     faq: [
       {
         question: 'How much historical data do I need?',
@@ -761,7 +761,7 @@ export const servicePages: ServicePage[] = [
       'Multi-format ingestion: PDFs, web pages, databases, Slack history',
       'Conversation memory and context so it feels natural',
     ],
-    relatedCaseStudies: ['pharma-market-dashboards'],
+    relatedCaseStudies: ['pharma-market-analytics-platform'],
     faq: [
       {
         question: 'What\'s RAG and why is it better than fine-tuning?',
@@ -793,7 +793,7 @@ export const servicePages: ServicePage[] = [
       'Funnel analysis showing where visitors drop off and why',
       'Dashboards connecting spend to revenue by channel and campaign',
     ],
-    relatedCaseStudies: ['estliving-digital-analytics', 'levis-last-touch-channel'],
+    relatedCaseStudies: ['estliving-digital-analytics', 'attribution-reporting-multichannel'],
     faq: [
       {
         question: 'How do you handle cross-device and offline attribution?',
@@ -856,7 +856,7 @@ export const insights = [
     readTime: 12,
     tags: ['Analytics', 'BigQuery', 'Migrations'],
     relatedService: 'analytics-migration',
-    relatedCaseStudies: ['project-mercury-levis'],
+    relatedCaseStudies: ['enterprise-reporting-migration'],
   },
   {
     slug: 'bot-traffic-filtering',
@@ -867,7 +867,7 @@ export const insights = [
     readTime: 10,
     tags: ['Analytics', 'Data Quality', 'Python'],
     relatedService: 'analytics-migration',
-    relatedCaseStudies: ['levis-bot-scoring-model'],
+    relatedCaseStudies: ['bot-scoring-ecommerce'],
   },
   {
     slug: 'last-touch-attribution-bigquery',
@@ -878,7 +878,7 @@ export const insights = [
     readTime: 13,
     tags: ['Analytics', 'BigQuery', 'Attribution'],
     relatedService: 'marketing-analytics',
-    relatedCaseStudies: ['levis-last-touch-channel'],
+    relatedCaseStudies: ['attribution-reporting-multichannel'],
   },
   {
     slug: 'power-bi-vs-tableau-vs-looker',
