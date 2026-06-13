@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Instrument_Serif, Inter, JetBrains_Mono } from 'next/font/google';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import { ThemeProvider } from '@/components/shared/theme-provider';
 import { Navbar } from '@/components/shared/navbar';
@@ -131,6 +132,11 @@ export default function RootLayout({
           <main className="min-h-screen">{children}</main>
           <Footer />
         </ThemeProvider>
+        <Analytics />
+        <Script
+          src="https://clarity.microsoft.com/tag/aahf0d4nh1"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
