@@ -16,9 +16,9 @@ const models = [
       'Payment: milestone-based',
     ],
     relatedCaseStudies: [
-      'Project Mercury — Reporting Migration (Levis)',
-      'Bot Traffic Scoring Model (Levis)',
-      'Website for Positive Minds Gippsland',
+      'Enterprise Reporting Migration — Multi-Region Retailer',
+      'Bot Traffic Scoring Model for E-Commerce Reporting',
+      'Full-Stack IT Engagement for JWE Group',
     ],
     cta: 'Let\'s discuss your project',
   },
@@ -33,8 +33,8 @@ const models = [
       'Great for teams that need consistent analytics support',
     ],
     relatedCaseStudies: [
-      'Market Tracking for AstraZeneca',
-      'Last-Touch Channel Attribution (Levis)',
+      'Market Tracking and Analytics Platform — Pharma',
+      'Multi-Channel Attribution Reporting — Web and App',
     ],
     cta: 'Let\'s talk about support',
   },

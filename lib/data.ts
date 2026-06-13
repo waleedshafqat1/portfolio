@@ -19,7 +19,7 @@ export const site = {
   name: 'Waleed Shafqat',
   title: 'Waleed Shafqat — Senior Analytics & Data Science Consultant',
   description:
-    'Senior Analytics & Data Science Consultant with 6+ years delivering BI dashboards, analytics solutions and predictive models for Levis, AstraZeneca and Toyota. Top Rated on Upwork with 100% client satisfaction.',
+    'Senior Analytics & Data Science Consultant with 7+ years delivering BI dashboards, analytics solutions and predictive models for enterprise clients across retail, pharmaceutical, and automotive sectors. Top Rated on Upwork with 100% client satisfaction.',
   url: 'https://www.waleedshafqat.com',
   keywords: [
     'Data Scientist',
@@ -221,11 +221,11 @@ export const experience = [
     period: 'Mar 2024 – Present',
     highlight: 'Promoted from Data Scientist',
     bullets: [
-      'Lead analytics for Levis and AstraZeneca — retail forecasting, CVM migration, healthcare BI.',
-      'Spearheaded Levis CVM Analytics migration, optimizing data workflows across China, US, Europe.',
+      'Lead analytics for enterprise clients across retail and pharmaceutical sectors.',
+      'Spearheaded major analytics migrations, optimizing data workflows across multiple regions.',
       'Built a hybrid bot traffic scoring model to protect KPI accuracy in business performance reporting, identifying sophisticated bots that evaded third-party detection.',
-      'Delivered Last Touch Channel attribution reporting across web and app traffic for multiple regions, giving stakeholders clear channel-level performance insight.',
-      'Built Patient Model Wizard integrating Power Apps, Power Automate and Python for AstraZeneca.',
+      'Delivered multi-channel attribution reporting across web and app traffic for multiple regions, giving stakeholders clear channel-level performance insight.',
+      'Built forecasting and analytics applications integrating Power Platform tools and Python.',
       'Mentor junior team members in dashboard development and ML best practices.',
     ],
   },
@@ -235,10 +235,10 @@ export const experience = [
     location: 'Singapore (Remote)',
     period: 'May 2021 – Mar 2024',
     bullets: [
-      'Developed Python models for assortment optimization, revenue forecasting and pricing for Levis China.',
-      'Designed and maintained dashboards for Levis China, US and Europe e-commerce reporting.',
-      'Built Funnel Metrics and Out-of-Stock Analysis reports for Levis US.',
-      'Engineered market comparison and performance tracking dashboards for AstraZeneca.',
+      'Developed Python models for demand forecasting, assortment optimization, and pricing analysis.',
+      'Designed and maintained dashboards for e-commerce reporting across multiple regions.',
+      'Built performance analysis and funnel metrics dashboards for enterprise clients.',
+      'Engineered market comparison and performance tracking platforms for pharmaceutical clients.',
     ],
   },
   {
@@ -249,9 +249,9 @@ export const experience = [
     highlight: 'Top Rated · 100% Client Satisfaction',
     bullets: [
       'Achieved Top Rated freelancer status on Upwork with 100% client satisfaction.',
-      'Power BI reports for Toyota (Australia & Ireland) assessing auto loan risks.',
-      'Credit scoring model for a microfinance bank (direct engagement) reducing default risk.',
-      'Looker Studio dashboards for Estliving analyzing user journeys via Google Analytics.',
+      'Power BI reports for automotive finance clients assessing portfolio risks.',
+      'Credit scoring model for a microfinance bank reducing default risk.',
+      'Looker Studio dashboards for real estate media analyzing user journeys via Google Analytics.',
     ],
   },
   {
@@ -283,35 +283,35 @@ export const experience = [
 export const caseStudies = [
   {
     slug: 'project-mercury-levis',
-    title: 'Project Mercury — Reporting Migration at Levis',
-    client: "Levis (via Lynx Analytics)",
+    title: 'Enterprise Reporting Migration — Multi-Region Retailer',
+    client: "Enterprise Client (via Lynx Analytics)",
     industry: 'Retail',
     duration: '2 years',
     stack: ['BigQuery', 'Looker Studio', 'Segment', 'ETL Pipelines', 'SQL'],
     summary:
-      'Led a two-year enterprise-wide initiative to migrate all analytical reporting at Levis from third-party tools to a fully owned, in-house reporting stack — covering the US, EU and Canada.',
+      'Led a two-year enterprise-wide initiative to migrate all analytical reporting for a major multi-region retailer from third-party tools to a fully owned, in-house reporting stack.',
     problem:
-      'Levis analytics were fragmented across multiple third-party platforms, creating vendor dependency, inconsistent metrics and limited flexibility for the regional teams who relied on them daily.',
+      'Analytics were fragmented across multiple third-party platforms, creating vendor dependency, inconsistent metrics and limited flexibility for regional teams who relied on them daily.',
     approach:
-      'Audited all existing third-party reports across regions, then rebuilt the full stack on Google-native tooling — leveraging already-available Segment data as the source, piping it into BigQuery via ETL pipelines and delivering reporting through Looker Studio. Established metric governance to ensure consistency across the US, EU and Canada and worked directly with regional stakeholders to drive adoption and minimise disruption.',
+      'Audited all existing reports across regions, then rebuilt the full stack on Google-native tooling — leveraging existing event data as the source, piping it into BigQuery via ETL pipelines and delivering reporting through Looker Studio. Established metric governance to ensure consistency across regions and worked directly with regional stakeholders to drive adoption and minimise disruption.',
     outcome:
-      'Full reporting stack transitioned in-house across the US, EU and Canada. Data ownership moved entirely off third-party platforms, unlocking deeper and more flexible analysis than was previously possible. Delivered hundreds of thousands of dollars in savings by eliminating recurring third-party tool costs.',
+      'Full reporting stack transitioned in-house. Data ownership moved entirely off third-party platforms, unlocking deeper and more flexible analysis than was previously possible. Significant cost savings by eliminating recurring third-party tool costs.',
     url: '',
     featured: true,
   },
   {
     slug: 'levis-bot-scoring-model',
-    title: 'Bot Traffic Scoring Model for Business Performance Reporting',
-    client: "Levis (via Lynx Analytics)",
+    title: 'Bot Traffic Scoring Model for E-Commerce Reporting',
+    client: "E-Commerce Client (via Lynx Analytics)",
     industry: 'Retail',
     duration: '3 months',
     stack: ['Python', 'BigQuery', 'SQL', 'Statistical Modeling'],
     summary:
-      "Built a hybrid bot traffic scoring model to protect KPI accuracy in Levis business performance reporting — catching sophisticated bots that evaded existing third-party filtering.",
+      "Built a hybrid bot traffic scoring model to protect KPI accuracy in e-commerce business performance reporting — catching sophisticated bots that evaded existing third-party filtering.",
     problem:
-      "Key business KPIs were being distorted by bot traffic, including highly sophisticated bots that mimicked human behavior closely enough to slip through established third-party filtering solutions. This made it difficult to trust the numbers driving strategic decisions.",
+      "Business KPIs were being distorted by bot traffic, including highly sophisticated bots that mimicked human behavior closely enough to slip through existing filtering solutions. This made it difficult to trust the numbers driving strategic decisions.",
     approach:
-      'Conducted in-depth analysis of traffic data to identify behavioral patterns associated with bot activity. Built a two-layer scoring model: the first layer flagged potential bot visits based on known behavioral signatures; the second applied a human-likeness filter to distinguish genuine human sessions from bots that had adopted realistic browsing patterns. Each session was assigned a composite score, and visits crossing the threshold were excluded from reporting.',
+      'Conducted in-depth analysis of traffic data to identify behavioral patterns associated with bot activity. Built a two-layer scoring model: the first layer flagged potential bot visits based on known behavioral signatures; the second applied a human-likeness filter to distinguish genuine human sessions from sophisticated bots. Each session was assigned a composite score, and visits crossing the threshold were excluded from reporting.',
     outcome:
       'Delivered significantly cleaner KPI data for business performance reporting, reducing bot-driven distortion in executive metrics and restoring confidence in the numbers used for strategic decisions.',
     url: '',
@@ -319,17 +319,17 @@ export const caseStudies = [
   },
   {
     slug: 'levis-last-touch-channel',
-    title: 'Last Touch Channel Attribution Reporting Across Web and App',
-    client: "Levis (via Lynx Analytics)",
+    title: 'Multi-Channel Attribution Reporting — Web and App',
+    client: "E-Commerce Client (via Lynx Analytics)",
     industry: 'Retail',
     duration: '1+ year',
     stack: ['BigQuery', 'Looker Studio', 'SQL', 'Google Analytics'],
     summary:
-      "Built a unified Last Touch Channel attribution reporting framework covering all web and app traffic across multiple regions for Levis, giving stakeholders clear visibility into channel performance.",
+      "Built a unified multi-channel attribution reporting framework covering all web and app traffic across multiple regions, giving stakeholders clear visibility into channel performance.",
     problem:
       'There was no single, consistent view of where web and app traffic was originating or how different marketing channels were performing across regions — limiting the ability of business stakeholders to make confident, data-driven decisions.',
     approach:
-      'Designed and built a Last Touch Channel attribution reporting framework that consolidated traffic data across all web and app properties and multiple regions. Defined a consistent attribution methodology and structured the reporting to surface channel-level performance in a format accessible to non-technical business stakeholders.',
+      'Designed and built an attribution reporting framework that consolidated traffic data across all web and app properties and multiple regions. Defined a consistent attribution methodology and structured the reporting to surface channel-level performance in a format accessible to non-technical business stakeholders.',
     outcome:
       'Gave regional and global teams a reliable, unified source of truth for channel performance. The reporting was adopted directly by stakeholders across the business to inform key decisions around marketing investment, traffic strategy and channel prioritization.',
     url: '',
@@ -337,55 +337,55 @@ export const caseStudies = [
   },
   {
     slug: 'pharma-market-dashboards',
-    title: 'Market Tracking for a Top-10 Pharma Company',
-    client: 'AstraZeneca (via Lynx Analytics)',
+    title: 'Market Tracking and Analytics Platform — Pharma',
+    client: 'Pharmaceutical Client (via Lynx Analytics)',
     industry: 'Pharmaceutical',
     duration: '3 months',
     stack: ['Power BI', 'Python', 'Power Apps', 'Power Automate'],
     summary:
-      'Market comparison and performance tracking dashboards, plus a Patient Model Wizard app streamlining healthcare analytics.',
+      'Market comparison and performance tracking dashboards, plus an analytics application for streamlining forecasting and modeling workflows.',
     problem:
-      'Regional teams needed unified, timely visibility into brand performance across markets — and analysts needed a faster way to run patient-flow models.',
+      'Regional teams needed unified, timely visibility into market performance — and analysts needed a faster way to run complex models and analyses.',
     approach:
-      'Engineered performance dashboards in Power BI plus a Power Apps frontend that triggered Python model runs via Power Automate, returning results back to the user.',
+      'Engineered performance dashboards in Power BI plus a Power Apps frontend that triggered Python model runs via Power Automate, returning results back to users.',
     outcome:
-      'Cut model turnaround from days to minutes for repeat analyses. Became the standard tool for the team.',
+      'Significantly reduced turnaround time for analyses. Became the standard tool for the team, improving workflow efficiency.',
     url: '',
     featured: true,
   },
   {
     slug: 'astrazeneca-patient-model-tracker',
-    title: 'Patient Model Submission & Forecasting Tracker for AstraZeneca',
-    client: 'AstraZeneca (via Lynx Analytics)',
+    title: 'Model Submission and Tracking Platform — Pharma',
+    client: 'Pharmaceutical Client (via Lynx Analytics)',
     industry: 'Pharmaceutical',
     duration: '4 months',
     stack: ['Power Apps', 'Power Automate', 'Power BI'],
     summary:
-      'Built an end-to-end Power Platform solution enabling AstraZeneca teams across different regions to submit patient models, with automated consolidation and a Power BI tracking report used for forecasting.',
+      'Built an end-to-end Power Platform solution enabling teams across different regions to submit and track models, with automated consolidation and Power BI reporting for forecasting.',
     problem:
-      'Different AstraZeneca teams were submitting patient models through disconnected, manual processes — making it impossible to consolidate submissions, track progress or use the data for reliable forecasting.',
+      'Teams were submitting models through disconnected, manual processes — making it impossible to consolidate submissions, track progress or use the data for reliable analysis.',
     approach:
-      'Designed a Power App that gave each team a consistent, structured interface for submitting their patient models. Power Automate workflows captured each submission and consolidated the data into a central source. Built a Power BI report on top to track all submissions in one place and surface the trends needed for forecasting.',
+      'Designed a Power App that gave each team a consistent, structured interface for model submissions. Power Automate workflows captured each submission and consolidated the data into a central source. Built a Power BI report on top to track all submissions and surface trends needed for forecasting.',
     outcome:
-      'Replaced fragmented manual processes with a single, governed submission workflow. The Power BI report became the go-to tool for tracking patient model submissions and informing forecasting decisions across teams.',
+      'Replaced fragmented manual processes with a single, governed submission workflow. The Power BI report became the go-to tool for tracking submissions and informing forecasting decisions across teams.',
     url: '',
     featured: true,
   },
   {
     slug: 'global-apparel-forecasting',
-    title: 'Assortment Optimization for a Global Apparel Retailer',
-    client: "Levis (via Lynx Analytics)",
+    title: 'Demand Forecasting and Assortment Optimization — Apparel',
+    client: "Global Apparel Retailer (via Lynx Analytics)",
     industry: 'Retail',
     duration: '8 months',
     stack: ['Python', 'BigQuery', 'Power BI', 'Time Series'],
     summary:
-      'Built Python-based assortment optimization and revenue forecasting models for a global retailer\'s China operations, paired with executive dashboards.',
+      'Built Python-based demand forecasting and assortment optimization models for a global retailer, paired with executive dashboards.',
     problem:
-      'Client needed to forecast demand across thousands of SKUs and optimize store-level assortment — existing methods relied on spreadsheets and gut-feel.',
+      'Client needed to forecast demand across thousands of SKUs and optimize store-level assortment — existing methods relied on spreadsheets and manual analysis.',
     approach:
-      'Designed a hybrid ML pipeline combining time-series forecasting with assortment optimization heuristics. Built a Power BI layer so regional managers could explore forecasts interactively.',
+      'Designed a hybrid ML pipeline combining time-series forecasting with assortment optimization. Built a Power BI layer so regional managers could explore forecasts interactively.',
     outcome:
-      'Reduced forecasting error significantly versus baseline; decisions moved from monthly cycles to weekly. Adopted by multiple regional teams.',
+      'Improved forecasting accuracy compared to baseline; decision cycles shifted from monthly to weekly. Adopted by multiple regional teams.',
     url: '',
     featured: true,
   },
@@ -545,14 +545,12 @@ export const employers = [
 // PROJECTS — Organisations behind the work (enterprise via employer + direct Upwork)
 // ============================================================
 export const projectOrgs = [
-  { name: "Levis",                  industry: 'Retail',            logo: '/logos/levis.png' },
-  { name: 'AstraZeneca',             industry: 'Pharmaceutical',    logo: '/logos/astrazeneca.png' },
-  { name: 'Toyota',                  industry: 'Automotive',        logo: '/logos/toyota.png' },
   { name: 'Positive Minds Gippsland', industry: 'Healthcare',       logo: '/logos/positive-minds.png' },
   { name: 'JWE Group',               industry: 'IT Consulting',     logo: '/logos/jwe-logo-full.png' },
   { name: 'Estliving',               industry: 'Real Estate',       logo: '/logos/estliving.png' },
   { name: 'Solv',                    industry: 'Workplace Safety',  logo: '/logos/solv.png' },
   { name: 'Hacking Happy',           industry: 'Business Services', logo: null },
+  { name: 'Coles',                   industry: 'Retail',            logo: null },
 ] as const;
 
 // ============================================================
