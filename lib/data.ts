@@ -17,9 +17,9 @@ export interface ServicePage {
 
 export const site = {
   name: 'Waleed Shafqat',
-  title: 'Waleed Shafqat — Senior Analytics & Data Science Consultant',
+  title: 'Waleed Shafqat — Data Science & Analytics Consultant',
   description:
-    'Senior Analytics & Data Science Consultant with 7+ years delivering BI dashboards, analytics solutions and predictive models for enterprise clients including Levis, AstraZeneca, and Toyota. Top Rated on Upwork with 100% client satisfaction.',
+    'Senior analytics and data science consultant. 7+ years building BI dashboards, BigQuery migrations and ML models for Levis, AstraZeneca and Toyota. Let\'s talk.',
   url: 'https://www.waleedshafqat.com',
   keywords: [
     'Data Scientist',

@@ -4,8 +4,12 @@ import { servicePages } from '@/lib/data';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services',
-  description: 'Analytics consulting, BI dashboards, forecasting, AI chatbots, marketing analytics, and web development.',
+  title: 'Analytics & Data Science Services | Waleed Shafqat',
+  description: 'BI dashboards, analytics migration, forecasting, AI chatbots, marketing analytics and web development — services delivered for enterprise and independent clients.',
+  keywords: ['data analytics services', 'data science consulting services', 'BI consulting services', 'analytics consulting', 'freelance analytics services', 'data consultant for hire'],
+  alternates: {
+    canonical: '/services',
+  },
 };
 
 export default function ServicesPage() {
