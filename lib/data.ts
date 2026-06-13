@@ -901,27 +901,27 @@ export const insights = [
 export const homepageFAQ = [
   {
     question: 'How do you work with clients who have data under NDA?',
-    answer: 'All my work is confidential by default. I do not share client data, naming, metrics, or approaches without explicit written permission. In case studies, I anonymize or speak in generics. Your data stays yours.',
+    answer: 'Everything is confidential by default. I don\'t share client data, metrics or approaches without written permission. In case studies, I anonymize or generalize. Your data stays yours.',
   },
   {
     question: 'What does a typical engagement look like, and how long does it take?',
-    answer: 'It depends on scope. A single dashboard is typically 4-6 weeks. An analytics migration is 3-6 months. A predictive model is 2-3 months. I give you a detailed timeline after understanding your data and requirements in our discovery call.',
+    answer: 'Depends on scope. A dashboard is usually 4-6 weeks. An analytics migration runs 3-6 months. A forecasting model, 2-3 months. I\'ll give you a detailed timeline once we\'ve talked through your requirements.',
   },
   {
     question: 'Do you work fixed-price or retainer?',
-    answer: 'Both. Project-based work (dashboards, migrations, models) is fixed-price with milestones. Ongoing support is retainer-based (hourly or monthly). We can mix: build something fixed-price, then support it on a small retainer.',
+    answer: 'Both. Project-based work (dashboards, migrations, models) is fixed-price with milestones. Ongoing support is retainer-based, hourly or monthly. I can mix them: build something fixed, then support it on retainer.',
   },
   {
     question: 'Which time zones do you cover?',
-    answer: 'I am based in Lahore, Pakistan. I work across APAC (Singapore, Australia, India), EU (UK, Germany), and US time zones. I am online 6am-10pm Pakistan time, which covers most business hours across these regions.',
+    answer: 'I\'m based in Lahore, Pakistan. I work across APAC (Singapore, Australia, India), EU (UK, Germany) and US time zones. I\'m online 6am-10pm Pakistan time, which covers most business hours across these regions.',
   },
   {
     question: 'Can you work with our existing BigQuery / Power BI / Azure setup?',
-    answer: 'Yes. I build on top of whatever you have. If your data is in BigQuery, Snowflake, Redshift, or SQL Server, I can work with it. Same for existing BI tools. I integrate with your stack rather than forcing you to move.',
+    answer: 'Yes. I build on top of whatever you have. BigQuery, Snowflake, Redshift, SQL Server, Power BI, Looker - I integrate with your stack rather than forcing a move.',
   },
   {
     question: 'What is the smallest project you will take?',
-    answer: 'A single dashboard or small analysis is fine. There is no minimum project size, but I do have a minimum hourly rate. For small work, retainer-based support often makes more sense economically.',
+    answer: 'A single dashboard or small analysis is fine. No minimum project size, but I do have a minimum hourly rate. For small work, retainer-based support usually makes more economic sense.',
   },
 ];
 
@@ -929,25 +929,25 @@ export const serviceFAQs: Record<string, typeof homepageFAQ> = {
   'bi-dashboards': [
     {
       question: 'Which tool should we choose: Power BI, Tableau, or Looker Studio?',
-      answer: 'It depends on where your data lives and your team\'s technical depth. If you are on Azure/Microsoft, Power BI is natural. If you are Google-native, Looker Studio. If you need maximum interactivity, Tableau. I can help you decide based on your constraints.',
+      answer: 'Depends on where your data lives and your team\'s technical depth. Azure/Microsoft = Power BI. Google-native = Looker Studio. Need maximum interactivity = Tableau. I\'ll help you decide based on your constraints.',
     },
     {
       question: 'How long does a dashboard build typically take?',
-      answer: 'A single dashboard is usually 4-6 weeks. Multi-dashboard engagements or complex federated setups take 3-6 months. I will give you a clear timeline after understanding your data.',
+      answer: 'A single dashboard is usually 4-6 weeks. Multi-dashboard work or complex federated setups take 3-6 months. I\'ll give you a clear timeline once we\'ve discussed your data.',
     },
     {
       question: 'Do you handle data infrastructure, or just the dashboard layer?',
-      answer: 'I build dashboards on top of whatever you have. If your data layer is messy, I can clean it up, but that is a separate engagement. I let you know if infrastructure work is needed before we start.',
+      answer: 'I build dashboards on top of whatever you have. If your data layer is messy, I can clean it up as a separate engagement. I\'ll flag if infrastructure work is needed before we start.',
     },
   ],
   'analytics-migration': [
     {
       question: 'How do you handle data validation during a migration?',
-      answer: 'Every field is reconciled row-by-row against the source. Row counts, sums, dates, null patterns are all verified before cutover. I build automated tests you can re-run post-launch.',
+      answer: 'Every field is reconciled row-by-row against the source. Row counts, sums, dates, null patterns - all verified before cutover. I build automated tests you can re-run post-launch.',
     },
     {
       question: 'What if we are using multiple data sources?',
-      answer: 'That is the norm. I design a unified ingestion layer pulling from Salesforce, GA4, your data warehouse, and custom APIs. The work is in orchestration and conflict resolution.',
+      answer: 'That\'s the norm. I design a unified ingestion layer pulling from Salesforce, GA4, your data warehouse and custom APIs. The work is in orchestration and conflict resolution.',
     },
     {
       question: 'Can we run old and new stacks in parallel during migration?',
@@ -957,29 +957,29 @@ export const serviceFAQs: Record<string, typeof homepageFAQ> = {
   'predictive-modeling': [
     {
       question: 'How much historical data do I need?',
-      answer: 'Time-series models need at least 2 years of clean data to capture seasonality. More is better. If you have less, we can use external data or simpler approaches.',
+      answer: 'Time-series models need at least 2 years of clean data to capture seasonality. More is better. With less, we can use external data or simpler approaches.',
     },
     {
       question: 'What happens when business changes (product launch, crisis)?',
-      answer: 'Good models degrade gracefully but don\'t auto-correct for regime changes. We build in manual override layers and retrain quarterly to adapt to new patterns.',
+      answer: 'Good models degrade gracefully but don\'t auto-correct for regime changes. I build in manual override layers and retrain quarterly to adapt to new patterns.',
     },
     {
       question: 'Do you build neural nets or deep learning?',
-      answer: 'Only when necessary. 90% of forecasting problems solve better with classical time-series (ARIMA, Prophet) or gradient boosting. I choose the simplest model that works.',
+      answer: 'Only when necessary. 90% of forecasting problems are solved better with classical time-series (ARIMA, Prophet) or gradient boosting. I choose the simplest model that works.',
     },
   ],
   'ai-chatbots': [
     {
       question: 'What is RAG and why is it better than fine-tuning?',
-      answer: 'RAG retrieves relevant documents at query time, so the model answers based on your actual data, not memorized training. It is faster to update, cheaper, and doesn\'t require retraining.',
+      answer: 'RAG retrieves relevant documents at query time, so the model answers based on your actual data, not memorized training. It\'s faster to update, cheaper and doesn\'t require retraining.',
     },
     {
       question: 'Can it integrate with our existing systems?',
-      answer: 'Yes. Slack, email, customer portals, internal tools — I can build the integration layer. The chatbot can query your databases and pull from Salesforce in real time.',
+      answer: 'Yes. Slack, email, customer portals, internal tools - I can build the integration layer. The chatbot can query your databases and pull from Salesforce in real time.',
     },
     {
       question: 'How do you prevent it from confidently giving wrong answers?',
-      answer: 'Confidence scoring, retrieval quality checks, and user feedback loops. We log queries without good answers and retrain. It also knows when to say "I do not know."',
+      answer: 'Confidence scoring, retrieval quality checks and user feedback loops. I log queries without good answers and retrain. It also knows when to say "I don\'t know."',
     },
   ],
   'marketing-analytics': [
@@ -989,17 +989,17 @@ export const serviceFAQs: Record<string, typeof homepageFAQ> = {
     },
     {
       question: 'Which attribution model should we use?',
-      answer: 'Depends on your business. E-commerce often uses time-decay or position-based. SaaS usually last-touch or multi-touch. We test models against your data and pick what correlates to ROI.',
+      answer: 'Depends on your business. E-commerce often uses time-decay or position-based. SaaS usually last-touch or multi-touch. I test models against your data and pick what correlates to ROI.',
     },
     {
       question: 'How often should we audit our tracking?',
-      answer: 'After major changes. Otherwise, quarterly audits catch drift. I recommend monthly spot-checks.',
+      answer: 'After major changes. Otherwise quarterly audits catch drift. I recommend monthly spot-checks.',
     },
   ],
   'web-development': [
     {
       question: 'Is Next.js overkill for a brochure site?',
-      answer: 'No. Next.js is so fast and has great developer experience that it is my default for anything from a simple site to a complex app.',
+      answer: 'No. Next.js is fast and has great developer experience. It\'s my default for anything from a simple site to a complex app.',
     },
     {
       question: 'Can you integrate with our CMS or backend?',
@@ -1007,7 +1007,7 @@ export const serviceFAQs: Record<string, typeof homepageFAQ> = {
     },
     {
       question: 'What about maintenance and updates after launch?',
-      answer: 'I hand over clean, documented code. You can maintain it yourself or I offer retainer support for fixes, optimizations, and feature additions.',
+      answer: 'I hand over clean, documented code. You can maintain it yourself or I offer retainer support for fixes, optimizations and feature additions.',
     },
   ],
 };
