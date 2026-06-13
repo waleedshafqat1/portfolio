@@ -5,6 +5,7 @@ import './globals.css';
 import { ThemeProvider } from '@/components/shared/theme-provider';
 import { Navbar } from '@/components/shared/navbar';
 import { Footer } from '@/components/shared/footer';
+import { PersonSchema, ProfessionalServiceSchema } from '@/components/json-ld';
 import { site } from '@/lib/data';
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -102,6 +103,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="font-sans">
+        <PersonSchema />
+        <ProfessionalServiceSchema />
         {GA_ID && (
           <>
             <Script

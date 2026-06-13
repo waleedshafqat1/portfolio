@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Lock, Clock, Briefcase, Layers, ExternalLink } from 'lucide-react';
 import { caseStudies } from '@/lib/data';
+import { BreadcrumbSchema, CreativeWorkSchema } from '@/components/json-ld';
 import type { Metadata } from 'next';
 
 interface Props {
@@ -25,8 +26,21 @@ export default function CaseStudyPage({ params }: Props) {
   const study = caseStudies.find((c) => c.slug === params.slug);
   if (!study) notFound();
 
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://www.waleedshafqat.com' },
+    { name: 'Work', url: 'https://www.waleedshafqat.com/work' },
+    { name: study.title, url: `https://www.waleedshafqat.com/work/${study.slug}` },
+  ];
+
   return (
-    <article className="pt-32 pb-24">
+    <>
+      <BreadcrumbSchema items={breadcrumbs} />
+      <CreativeWorkSchema
+        title={study.title}
+        description={study.summary}
+        url={`https://www.waleedshafqat.com/work/${study.slug}`}
+      />
+      <article className="pt-32 pb-24">
       <div className="container-page max-w-4xl">
         <Link
           href="/#work"
@@ -147,5 +161,6 @@ export default function CaseStudyPage({ params }: Props) {
         </div>
       </div>
     </article>
+    </>
   );
 }
