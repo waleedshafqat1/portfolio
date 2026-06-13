@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, TrendingUp, Code, MessageSquare, BarChart3, Sparkles } from 'lucide-react';
+import { ArrowRight, Zap, TrendingUp, Code, MessageSquare, BarChart3, Sparkles, Target } from 'lucide-react';
 import { servicePages } from '@/lib/data';
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -10,6 +10,7 @@ const iconMap: Record<string, React.ReactNode> = {
   'analytics-migration': <TrendingUp className="h-8 w-8" />,
   'predictive-modeling': <Sparkles className="h-8 w-8" />,
   'ai-chatbots': <MessageSquare className="h-8 w-8" />,
+  'marketing-analytics': <Target className="h-8 w-8" />,
   'web-development': <Code className="h-8 w-8" />,
 };
 
