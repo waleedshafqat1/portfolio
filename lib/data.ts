@@ -671,15 +671,15 @@ export const servicePages: ServicePage[] = [
     faq: [
       {
         question: 'Which tool should we choose: Power BI, Tableau, or Looker Studio?',
-        answer: 'It depends on where your data lives and your licensing constraints. If you\'re on Azure/Microsoft, Power BI is often the natural fit. If you need maximum interactivity and don\'t mind premium pricing, Tableau. If you\'re Google-native or cost-conscious, Looker Studio. I\'ve shipped in all three; the right choice is the one your team can maintain.',
+        answer: 'Depends on where your data lives and licensing. Azure/Microsoft = Power BI. Need interactivity and have budget = Tableau. Google-native or cost-conscious = Looker Studio. I\'ve shipped in all three; the right choice is what your team can maintain.',
       },
       {
         question: 'How long does a dashboard build typically take?',
-        answer: 'A single-dashboard engagement is usually 4–6 weeks: data exploration, design, build, review, refinement. Multi-dashboard migrations or complex federated setups take 3–6 months. I\'ll give you a clear timeline after understanding your data.',
+        answer: 'A single dashboard is usually 4-6 weeks: exploration, design, build, review, refinement. Multi-dashboard work or complex federated setups take 3-6 months. I\'ll give you a timeline once we\'ve discussed your data.',
       },
       {
         question: 'Do you handle data infrastructure, or just the dashboard layer?',
-        answer: 'I can build a dashboard on top of whatever you have (SQL Server, BigQuery, Salesforce, Excel). If your data layer is messy, I can help there too, but that\'s a separate engagement.',
+        answer: 'I build dashboards on top of whatever you have (SQL Server, BigQuery, Salesforce, Excel). If your data layer is messy, I can help, but that\'s a separate engagement.',
       },
     ],
   },
@@ -703,7 +703,7 @@ export const servicePages: ServicePage[] = [
     faq: [
       {
         question: 'How do you handle data validation during a migration?',
-        answer: 'Every field is reconciled row-by-row against the source. Row counts, sums, dates, null patterns — all verified before cutover. I build automated tests so you can re-run them post-launch.',
+        answer: 'Every field is reconciled row-by-row against the source. Row counts, sums, dates, null patterns - all verified before cutover. I build automated tests so you can re-run them post-launch.',
       },
       {
         question: 'What if we\'re using multiple data sources?',
@@ -771,7 +771,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         question: 'Can it integrate with our existing systems?',
-        answer: 'Yes. Slack, email, customer portals, internal tools—I can build the integration layer. The chatbot can query your databases, pull from Salesforce, check inventory in real time.',
+        answer: 'Yes. Slack, email, customer portals, internal tools - I can build the integration layer. The chatbot can query your databases, pull from Salesforce, check inventory in real time.',
       },
       {
         question: 'How do you prevent it from confidently giving wrong answers?',
