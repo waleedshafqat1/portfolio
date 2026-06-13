@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Calendar } from 'lucide-react';
 import Link from 'next/link';
@@ -10,7 +11,16 @@ export function Hero() {
   const [taglineIndex, setTaglineIndex] = useState(0);
   const [displayed, setDisplayed] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const years = getYearsOfExperience();
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setPrefersReducedMotion(mediaQuery.matches);
+    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mediaQuery.addEventListener('change', handler);
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
 
   // Typewriter effect
   useEffect(() => {
@@ -58,7 +68,7 @@ export function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: prefersReducedMotion ? 0 : 0.5, delay: 0.1 }}
             className="mt-6 font-mono text-sm text-accent-500 uppercase tracking-[0.2em]"
           >
             Hello, I&apos;m Waleed
@@ -156,9 +166,12 @@ export function Hero() {
             {/* Animated blob background */}
             <div className="absolute inset-0 bg-gradient-to-tr from-accent-500 via-glow to-accent-400 animate-blob opacity-90" />
             <div className="absolute inset-2 bg-ink-950 animate-blob rounded-full flex items-center justify-center overflow-hidden">
-              <img
+              <Image
                 src="/images/waleed.png"
                 alt="Waleed Shafqat"
+                width={400}
+                height={400}
+                priority
                 className="w-full h-full object-cover"
               />
             </div>
