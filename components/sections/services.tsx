@@ -56,21 +56,8 @@ export function Services() {
           {services.map((service, i) => {
             const Icon = iconMap[service.icon];
             const slug = serviceSlugMap[service.title];
-            const Component = slug ? Link : 'div';
-            const componentProps = slug ? { href: `/services/${slug}` } : {};
-            return (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ delay: i * 0.08 }}
-                asChild
-              >
-                <Component
-                  {...componentProps}
-                  className="group relative card-base p-6 md:p-8 hover:border-accent-500 transition-all duration-300 overflow-hidden"
-                >
+            const cardContent = (
+              <>
                 {/* Hover gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/0 to-accent-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -104,7 +91,29 @@ export function Services() {
                   <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-accent-500/50 to-transparent" />
                   <div className="absolute top-0 right-0 h-px w-full bg-gradient-to-l from-accent-500/50 to-transparent" />
                 </div>
-                </Component>
+              </>
+            );
+
+            return (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-50px' }}
+                transition={{ delay: i * 0.08 }}
+              >
+                {slug ? (
+                  <Link
+                    href={`/services/${slug}`}
+                    className="group relative card-base p-6 md:p-8 hover:border-accent-500 transition-all duration-300 overflow-hidden block"
+                  >
+                    {cardContent}
+                  </Link>
+                ) : (
+                  <div className="group relative card-base p-6 md:p-8 hover:border-accent-500 transition-all duration-300 overflow-hidden">
+                    {cardContent}
+                  </div>
+                )}
               </motion.div>
             );
           })}

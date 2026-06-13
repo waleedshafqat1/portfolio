@@ -3,6 +3,18 @@
  * Structured so non-developers can update copy without touching components.
  */
 
+export interface ServicePage {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  headline: string;
+  intro: string;
+  problem: string;
+  whatYouGet: string[];
+  relatedCaseStudies: string[];
+  faq: { question: string; answer: string }[];
+}
+
 export const site = {
   name: 'Waleed Shafqat',
   title: 'Waleed Shafqat — Senior Analytics & Data Science Consultant',
@@ -639,7 +651,7 @@ export const testimonials = [
 // ============================================================
 // SERVICE PAGES — Dedicated, indexable service detail pages
 // ============================================================
-export const servicePages = [
+export const servicePages: ServicePage[] = [
   {
     slug: 'bi-dashboards',
     title: 'BI Dashboards & Reporting Consultant',

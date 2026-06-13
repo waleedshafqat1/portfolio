@@ -4,12 +4,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { caseStudies, projectOrgs } from '@/lib/data';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Work',
-  description: 'Case studies from enterprise consulting and Upwork. Real client work, real outcomes.',
-};
 
 export default function WorkPage() {
   const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
