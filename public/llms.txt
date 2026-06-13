@@ -1,0 +1,47 @@
+# Waleed Shafqat — Senior Analytics & Data Science Consultant
+
+> Waleed Shafqat is a senior data science and analytics consultant with 7+ years
+> delivering BI dashboards, analytics migrations, forecasting and ML models for
+> enterprise clients including Levis, AstraZeneca and Toyota (delivered via Lynx
+> Analytics) and independent clients via Upwork (Top Rated, 100% Job Success).
+> Based in Lahore, Pakistan; works remotely across APAC, Europe and the US.
+> Core stack: Power BI, Tableau, Looker Studio, BigQuery, Python, Azure, SQL, RAG/LLM.
+
+## Services
+
+- [BI Dashboards & Reporting](https://www.waleedshafqat.com/services/bi-dashboards): Power BI, Tableau and Looker Studio dashboards tied to real decisions.
+- [Analytics Migration & Automation](https://www.waleedshafqat.com/services/analytics-migration): moving reporting, CVM and ETL to BigQuery, Azure and automation-first stacks.
+- [Forecasting & Predictive Modeling](https://www.waleedshafqat.com/services/predictive-modeling): revenue forecasts, demand planning, time-series for retail and e-commerce.
+- [AI Chatbots & Assistants](https://www.waleedshafqat.com/services/ai-chatbots): LLM and RAG assistants for support, internal tools and automation.
+- [Marketing & User-Journey Analytics](https://www.waleedshafqat.com/services/marketing-analytics): GA4, GTM, funnel and attribution analysis.
+- [Web Development](https://www.waleedshafqat.com/services/web-development): production Next.js sites and data-driven web apps.
+
+## Selected Work
+
+- [Project Mercury — Reporting Migration (Levis)](https://www.waleedshafqat.com/work/project-mercury-levis): two-year enterprise reporting migration across US, EU and Canada.
+- [Bot Traffic Scoring Model (Levis)](https://www.waleedshafqat.com/work/levis-bot-scoring-model): hybrid model protecting KPI accuracy against sophisticated bots.
+- [Last-Touch Channel Attribution (Levis)](https://www.waleedshafqat.com/work/levis-last-touch-channel): unified web and app attribution in BigQuery and Looker Studio.
+- [Market Tracking (AstraZeneca)](https://www.waleedshafqat.com/work/pharma-market-dashboards): market-comparison dashboards and a Patient Model Wizard app.
+- [Customer Segmentation (Coles)](https://www.waleedshafqat.com/work/coles-baby-customer-segmentation): k-means segmentation for the baby category.
+- [Full-Stack IT Engagement (JWE Group)](https://www.waleedshafqat.com/work/jwe-group-it-engagement): website build, Microsoft 365 migration, security hardening.
+
+## Insights
+
+- [Enterprise Reporting Migration — What I Learned](https://www.waleedshafqat.com/insights/enterprise-reporting-migration)
+- [How to Catch Bot Traffic That Fools Your BI Filters](https://www.waleedshafqat.com/insights/bot-traffic-filtering)
+- [Last-Touch Attribution in BigQuery](https://www.waleedshafqat.com/insights/last-touch-attribution-bigquery)
+- [Power BI vs Tableau vs Looker Studio](https://www.waleedshafqat.com/insights/power-bi-vs-tableau-vs-looker)
+
+## About & Contact
+
+- [About](https://www.waleedshafqat.com/#about): background, credentials and approach.
+- [Book a call](https://www.waleedshafqat.com/book): 20-minute intro call.
+- [Free Discovery Audit](https://www.waleedshafqat.com/discovery-audit): 30-minute analytics health check.
+- [WhatsApp](https://wa.me/61451466432?text=Hi%20Waleed,%20I%20saw%20your%20portfolio%20and%20wanted%20to%20ask%20about...): direct chat.
+- [Email](mailto:waleedshafqat1@gmail.com): waleedshafqat1@gmail.com
+
+## Credentials
+
+- **MSc Data Analytics**, RMIT University (Dean's List). **BSc Computer Science**, FAST.
+- **Microsoft Certified: Azure Data Scientist Associate**. **SAS Advanced Analytics**.
+- **7+ years** delivering analytics. **Top Rated** on Upwork. **100% client satisfaction**.

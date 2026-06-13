@@ -1,0 +1,297 @@
+# Waleed Shafqat — Complete Portfolio
+
+## Overview
+
+Senior analytics and data science consultant with 7+ years of experience. Top Rated on Upwork with 100% job success. Enterprise clients via Lynx Analytics (Levis, AstraZeneca). Remote, works across APAC, Europe, and US time zones.
+
+### Core Expertise
+- BI Dashboards (Power BI, Tableau, Looker Studio)
+- Analytics Migrations (BigQuery, Azure, modern stacks)
+- Predictive Modeling & Forecasting
+- AI Chatbots & RAG Systems
+- Marketing Analytics & Attribution
+- Web Development (Next.js, React, TypeScript)
+
+---
+
+## BI Dashboards & Reporting
+
+I build dashboards executives open every morning, not the kind that get made once and forgotten. Power BI, Tableau or Looker Studio, depending on where your data already lives.
+
+### The Problem
+Most dashboards fail silently. Teams build them in isolation, hand them off, and they gather dust. Or they get opened, but nobody trusts the numbers. Or they're so slow and fragile that one schema change breaks everything.
+
+### What You Get
+- A dashboard tied to a real decision (not just metrics for metrics' sake)
+- Performance-optimized queries and cached data layers
+- A maintenance-first design so you can own updates without breaking things
+- One-page snapshot + drill-through depth for stakeholders at every level
+
+### Tools
+Power BI works best on Azure/SQL Server. Tableau for maximum flexibility and interactivity. Looker Studio for fast, free, good-enough dashboards on Google Cloud.
+
+### Related Work
+- Project Mercury — Reporting Migration (Levis): two-year migration, 50+ reports across US, EU, Canada
+- Market Tracking (AstraZeneca): market-comparison dashboards + Patient Model Wizard app
+- Bot Traffic Scoring (Levis): model to protect KPI accuracy against sophisticated bot traffic
+
+---
+
+## Analytics Migration & Stack Modernization
+
+Moving off fragmented reporting systems, outdated tools, or expensive third-party platforms is one of the highest-ROI projects a data team can take on.
+
+### The Problem
+Legacy reporting stacks are expensive, rigid, and painful. You're on multiple platforms (Looker, Qlik, hand-built spreadsheets) with no single source of truth. Migrations scare you because the last one cost months and broke things.
+
+### What You Get
+- A migration plan that treats data consistency as non-negotiable
+- End-to-end ETL rebuild in your target stack (BigQuery, Azure, Snowflake, etc.)
+- Reconciliation and validation at every step so you know data is correct
+- Training so your team owns the new stack post-migration
+- A data governance foundation so the next migration is easier
+
+### The Real ROI
+Lower costs and higher velocity. The Levis migration eliminated $500k annually in platform costs, with a 6-month payback on the migration itself.
+
+### Related Work
+- Project Mercury — Reporting Migration (Levis): full migration, 3 regions, zero data loss
+- Last-Touch Attribution (Levis): unified attribution across web and app traffic
+
+---
+
+## Forecasting & Predictive Modeling
+
+Production-grade forecast and risk models tuned to your business: revenue, demand, churn, attrition.
+
+### The Problem
+Spreadsheet forecasts become outdated the moment they're made. Forecasts built by consultants live in a deck, not in your daily decision-making. You need something you trust, update weekly, and can act on.
+
+### What You Get
+- A production model updated automatically from your data source
+- Weekly/monthly forecasts with confidence intervals so you know the range
+- Explainability: which factors drive the forecast, not a black box
+- Tuning to your business: seasonal patterns, trend breaks, anomalies
+- Integration into your BI layer so forecasts live next to actuals
+
+### Approach
+Time-series models need at least 2 years of clean data to capture seasonality. I use ARIMA, Prophet, or gradient boosting—the simplest model that works, not neural nets for the sake of it.
+
+### Related Work
+- Assortment Optimization (Levis China): Python-based forecasting + dashboards, adopted across multiple regions
+- Bot Traffic Scoring (Levis): statistical model protecting KPI accuracy
+
+---
+
+## AI Chatbots & Assistants
+
+LLMs are powerful but unreliable when you need them to answer questions about your data without hallucinating. RAG systems ground LLMs in your knowledge base.
+
+### The Problem
+Off-the-shelf ChatGPT integrations make up answers. Fine-tuned models are expensive and fragile. You need a chatbot that knows your docs, your customer FAQs, your product, and doesn't BS.
+
+### What You Get
+- A RAG system that retrieves from your documents before answering
+- Grounding in your data so no hallucinations about your product
+- Fast iteration cycles: update docs, the chatbot updates automatically
+- Multi-format ingestion: PDFs, web pages, databases, Slack history
+- Conversation memory and context so it feels natural
+
+### Technology
+RAG retrieves relevant documents at query time, so the model answers based on your actual data, not memorized training. Faster to update, cheaper, and doesn't require retraining.
+
+---
+
+## Marketing Analytics & Attribution
+
+Marketing loves to claim credit. Attribution is how you actually know which channels drive value.
+
+### The Problem
+GA4 is a maze. You have events firing but no idea if they're right. Attribution is "first-touch" by default (wrong for most businesses). You're flying blind on channel performance.
+
+### What You Get
+- Clean GA4 implementation with proper event tracking and data layers
+- Google Tag Manager setup so you can update tags without code changes
+- Custom reporting: last-touch, multi-touch, time-decay attribution models
+- Funnel analysis showing where visitors drop off and why
+- Dashboards connecting spend to revenue by channel and campaign
+
+### Related Work
+- Last-Touch Channel Attribution (Levis): unified attribution across web and app, 30+ days lookback
+- Digital Analytics (EST Living): Looker Studio dashboards for multi-brand luxury real estate platform
+
+---
+
+## Web Development
+
+Modern web apps need to be fast, live on real data, and rank on search engines.
+
+### What You Get
+- A fast, modern site built in Next.js (98+ Lighthouse performance)
+- SEO-optimized from the ground up (schema, canonical, meta, sitemaps)
+- Interactive dashboards and data visualizations if you need them
+- Deployed to Vercel: 99.95% uptime, automatic scaling, edge caching
+- Analytics and monitoring so you know what's working
+
+### Stack
+Next.js 14, TypeScript, Tailwind CSS, Framer Motion for animations, deployed to Vercel.
+
+### Related Work
+- JWE Group IT Engagement: 48 fully responsive pages, Microsoft 365 migration, security hardening (98/100 performance)
+- Positive Minds Gippsland: counselling practice website, live at positivemindsgippsland.com
+
+---
+
+## Selected Case Studies
+
+### Project Mercury — Reporting Migration (Levis)
+Led a two-year enterprise-wide initiative to migrate all analytical reporting at Levis from third-party tools to a fully owned, in-house reporting stack covering the US, EU and Canada.
+
+**Problem:** Levis analytics were fragmented across multiple third-party platforms, creating vendor dependency, inconsistent metrics and limited flexibility.
+
+**Approach:** Audited all existing third-party reports across regions, then rebuilt the full stack on Google-native tooling—leveraging Segment data, piping it into BigQuery via ETL pipelines and delivering reporting through Looker Studio. Established metric governance.
+
+**Outcome:** Full reporting stack transitioned in-house across three regions. Data ownership moved entirely off third-party platforms. Saved hundreds of thousands annually in platform costs.
+
+### Bot Traffic Scoring Model (Levis)
+Built a hybrid bot traffic scoring model to protect KPI accuracy in Levis business performance reporting—catching sophisticated bots that evaded existing third-party filtering solutions.
+
+**Problem:** Key business KPIs were being distorted by bot traffic, including highly sophisticated bots that mimicked human behavior closely enough to slip through established third-party filtering.
+
+**Approach:** Built a two-layer scoring model: first layer flagged potential bot visits based on known behavioral signatures; second layer applied a human-likeness filter to distinguish genuine human sessions from bots that had adopted realistic browsing patterns.
+
+**Outcome:** Delivered significantly cleaner KPI data, reducing bot-driven distortion in executive metrics and restoring confidence in the numbers used for strategic decisions.
+
+### Last-Touch Channel Attribution (Levis)
+Built a unified Last Touch Channel attribution reporting framework covering all web and app traffic across multiple regions.
+
+**Problem:** No single, consistent view of where web and app traffic was originating or how different marketing channels were performing across regions.
+
+**Approach:** Designed and built a Last Touch Channel attribution reporting framework that consolidated traffic data across all web and app properties and multiple regions. Defined consistent attribution methodology.
+
+**Outcome:** Gave regional and global teams a reliable, unified source of truth for channel performance, adopted directly by stakeholders across the business.
+
+### Market Tracking for AstraZeneca
+Market comparison and performance tracking dashboards, plus a Patient Model Wizard app streamlining healthcare analytics.
+
+**Problem:** Regional teams needed unified, timely visibility into brand performance across markets. Analysts needed a faster way to run patient-flow models.
+
+**Approach:** Engineered performance dashboards in Power BI plus a Power Apps frontend that triggered Python model runs via Power Automate, returning results back to the user.
+
+**Outcome:** Cut model turnaround from days to minutes. Became the standard tool for the team.
+
+### Customer Segmentation (Coles)
+Built a customer segmentation model for all consumers who purchased baby-related products at Coles.
+
+**Problem:** Coles had a large, diverse base of baby-category shoppers but no structured way to distinguish between them.
+
+**Approach:** Extracted and cleaned transaction data for baby-category purchases, engineered behavioral features (purchase frequency, basket size, product affinity), then applied clustering techniques to identify distinct customer segments.
+
+**Outcome:** Delivered a clear segmentation enabling more focused, segment-specific sales strategies.
+
+### Full-Stack IT Engagement (JWE Group)
+Delivered a complete IT engagement for an Australian electrical contractor—covering full website development from scratch, Microsoft 365 email infrastructure migration, domain ownership transfer, and enterprise security hardening.
+
+**Problem:** JWE Group needed a complete IT overhaul. No professional website, fragmented email setup, no domain ownership, failing enterprise security audit.
+
+**Approach:** Built the company website entirely from scratch using Next.js 14, TypeScript, and Tailwind CSS—48 fully responsive pages. Migrated all email to Microsoft 365. Transferred domain ownership. Implemented enterprise-grade security hardening.
+
+**Outcome:** Live production website (98/100 performance, A-grade security, 95+/100 accessibility). Fully operational Microsoft 365 environment with zero data loss. Security audit requirements met.
+
+### Website for Positive Minds Gippsland
+Designed and developed a professional website for a counselling and teaching practice serving the Gippsland region of Australia.
+
+**Problem:** The organisation needed a welcoming, accessible web presence to connect people in Gippsland with counselling services.
+
+**Approach:** Built a clean, mobile-responsive site with service pages, team profiles and an enquiry form. Prioritised readability and a calm visual tone appropriate for a mental health context.
+
+**Outcome:** Live at positivemindsgippsland.com, serving clients across Warragul and the wider Gippsland region with clear pathways to book counselling sessions.
+
+---
+
+## Insights & Articles
+
+### Enterprise Reporting Migration — What I Learned Over Two Years
+Moving 50+ reports across three regions taught me that migrations fail not because of technology, but because of data debt. Covers reconciliation, phased cutover, governance, and team ownership.
+
+### How to Catch Bot Traffic That Fools Your BI Filters
+Third-party bot detection misses sophisticated visitors that mimic human behavior. Built a hybrid scoring model using behavioral anomalies and machine learning to protect KPI accuracy.
+
+### Last-Touch Attribution Across Web and App in BigQuery
+Attribution is marketing's favorite lie until you have traffic across web, app, email, and offline. Practical setup in BigQuery and Looker Studio with real SQL patterns.
+
+### Power BI vs Tableau vs Looker Studio — How I Actually Choose
+Decision framework based on data location, team technical depth, budget, interactivity needs, and maintenance reality. No one tool is best; the right choice depends on constraints.
+
+---
+
+## FAQ
+
+### How do you work with clients who have data under NDA?
+All work is confidential by default. I do not share client data, naming, metrics, or approaches without explicit written permission. Your data stays yours.
+
+### What does a typical engagement look like, and how long does it take?
+Depends on scope. A single dashboard is 4-6 weeks. An analytics migration is 3-6 months. A predictive model is 2-3 months. I give a detailed timeline after understanding your requirements.
+
+### Do you work fixed-price or retainer?
+Both. Project-based work is fixed-price with milestones. Ongoing support is retainer-based (hourly or monthly). We can mix.
+
+### Which time zones do you cover?
+Based in Lahore, Pakistan. Online 6am-10pm Pakistan time, which covers most business hours across APAC, EU, and US.
+
+### Can you work with our existing BigQuery / Power BI / Azure setup?
+Yes. I build on top of whatever you have. I integrate with your stack rather than forcing you to move.
+
+### What is the smallest project you will take?
+No minimum project size, but I do have a minimum hourly rate. For small work, retainer-based support often makes more sense.
+
+---
+
+## Engagement Models
+
+### Project-Based
+Fixed price with clear scope. BI dashboards, forecasting models, websites. Typical: 4 weeks – 6 months. Payment: milestone-based.
+
+### Retainer
+Monthly or hourly retainer for ongoing support. Dashboard updates, ad-hoc analysis, new reports. No surprises: we agree on hours/scope upfront.
+
+### Hybrid
+Build something large, then support it. Example: $50k project + $3k/month retainer. You get the new capability, I keep it running.
+
+---
+
+## Credentials & Experience
+
+### Education
+- **MSc Data Analytics**, RMIT University (Dean's List)
+- **BSc Computer Science**, National University of Computer & Emerging Sciences (FAST)
+
+### Certifications
+- **Microsoft Certified: Azure Data Scientist Associate**
+- **SAS Advanced Analytics Certification**
+
+### Professional Experience
+- **Senior Data Scientist** at Lynx Analytics (Mar 2024 – Present): Lead analytics for Levis and AstraZeneca
+- **Data Scientist** at Lynx Analytics (May 2021 – Mar 2024): Python models, dashboards, BI work
+- **Freelance Data Scientist** on Upwork (Nov 2019 – May 2021): Top Rated, 100% Job Success
+- **Advanced Analytics Intern** at Coles (Aug 2019 – Nov 2019): ML segmentation, BI models
+- **Software Engineer** at i2c Inc. (Jul 2016 – Jul 2017): Performance analysis, SQL, Linux
+
+### Impact Metrics
+- 7+ years of experience
+- 50+ projects delivered
+- Top Rated on Upwork
+- 100% client satisfaction
+- Enterprise clients on 3 continents
+- 4+ industries served (retail, pharma, finance, real estate, automotive, healthcare)
+
+---
+
+## Contact
+
+- **Book a call:** https://www.waleedshafqat.com/book
+- **Discovery audit:** https://www.waleedshafqat.com/discovery-audit
+- **Email:** waleedshafqat1@gmail.com
+- **WhatsApp:** https://wa.me/61451466432
+- **LinkedIn:** https://www.linkedin.com/in/waleedshafqat1/
+- **Upwork:** https://www.upwork.com/freelancers/~011464dcb5c9f683c7
