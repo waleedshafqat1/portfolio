@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GraduationCap, MapPin, TrendingUp, Award } from 'lucide-react';
+import { GraduationCap, MapPin, TrendingUp, Award, CheckCircle, Code, BarChart3, Zap } from 'lucide-react';
 import { experience, education, certifications } from '@/lib/data';
 import Link from 'next/link';
 
@@ -40,27 +40,81 @@ const storyBeats = [
 
 export default function AboutPage() {
   return (
-    <div className="pt-32 pb-20">
-      <div className="container-page">
-        {/* Intro */}
-        <div className="max-w-3xl mb-24">
-          <h1 className="heading-display mb-6">About</h1>
-          <div className="space-y-4 text-ink-600 dark:text-ink-400 leading-relaxed">
-            <p>
-              I started as a computer science student with an unusual conviction: that data was going to matter more than most people realized. A decade later, I'm building the models, pipelines, dashboards, and analytics systems that drive enterprise decisions across three continents.
-            </p>
-            <p>
-              My work spans the full data science and analytics spectrum — from machine learning models and forecasting systems in production, to BI dashboards executives actually open, to data pipelines and migrations that modernise how organisations manage their data. I've delivered across retail, pharmaceutical, automotive finance, and microfinance, with clients including Levis, AstraZeneca, and Toyota.
-            </p>
-            <p className="text-ink-900 dark:text-ink-100 font-medium">
-              I don't do work for its own sake. Every project I take on answers one question: <em>what decision, outcome, or capability does this unlock?</em>
-            </p>
-          </div>
-        </div>
+    <div className="min-h-screen bg-gradient-to-b from-transparent via-accent-500/5 to-transparent">
+      <div className="pt-32 pb-20">
+        <div className="container-page">
+          {/* Intro */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mb-24"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-gradient-to-r from-accent-500 to-accent-400" />
+              <span className="font-mono text-xs uppercase tracking-widest text-accent-500 font-medium">
+                Who I Am
+              </span>
+            </div>
+            <h1 className="heading-display mb-8 bg-gradient-to-r from-ink-900 to-ink-700 dark:from-ink-50 dark:to-ink-300 bg-clip-text text-transparent">
+              Data Architecture for Enterprise Scale
+            </h1>
+            <div className="space-y-4 text-lg text-ink-600 dark:text-ink-400 leading-relaxed">
+              <p>
+                I started as a computer science student with an unusual conviction: that data was going to matter more than most people realized. A decade later, I'm building the models, pipelines, dashboards, and analytics systems that drive enterprise decisions across three continents.
+              </p>
+              <p>
+                My work spans the full data science and analytics spectrum — from machine learning models and forecasting systems in production, to BI dashboards executives actually open, to data pipelines and migrations that modernise how organisations manage their data. I've delivered across retail, pharmaceutical, automotive finance, and microfinance, with clients including Levis, AstraZeneca, and Toyota.
+              </p>
+              <p className="text-ink-900 dark:text-ink-100 font-medium text-base">
+                I don't do work for its own sake. Every project I take on answers one question: <em>what decision, outcome, or capability does this unlock?</em>
+              </p>
+            </div>
+          </motion.div>
 
-        {/* Timeline */}
-        <div className="mb-24">
-          <h2 className="font-display text-2xl text-ink-900 dark:text-ink-50 mb-12">Journey</h2>
+          {/* Skills Grid */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-24 py-12 border-t border-b border-ink-200 dark:border-ink-800"
+          >
+            <h2 className="font-display text-2xl text-ink-900 dark:text-ink-50 mb-8">Core Capabilities</h2>
+            <div className="grid md:grid-cols-4 gap-6">
+              {[
+                { icon: BarChart3, label: 'BI & Analytics', desc: 'Power BI, Tableau, Looker Studio' },
+                { icon: Code, label: 'Data Engineering', desc: 'Python, SQL, BigQuery, ETL' },
+                { icon: Zap, label: 'ML & Modeling', desc: 'Forecasting, Classification, Risk' },
+                { icon: TrendingUp, label: 'Analytics', desc: 'Attribution, Segmentation, RFM' },
+              ].map((skill, idx) => {
+                const Icon = skill.icon;
+                return (
+                  <motion.div
+                    key={skill.label}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="p-6 rounded-xl border border-ink-200 dark:border-ink-800 hover:border-accent-500/50 bg-white/50 dark:bg-ink-900/50 transition-colors"
+                  >
+                    <Icon className="h-6 w-6 text-accent-500 mb-3" />
+                    <h3 className="font-display text-lg text-ink-900 dark:text-ink-50 mb-1">{skill.label}</h3>
+                    <p className="text-xs text-ink-600 dark:text-ink-400">{skill.desc}</p>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </motion.div>
+
+          {/* Timeline */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mb-24"
+        >
+          <h2 className="font-display text-2xl text-ink-900 dark:text-ink-50 mb-12">Professional Journey</h2>
           <div className="relative">
             {/* Vertical line */}
             <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-accent-500 via-accent-500/50 to-transparent" />
@@ -75,23 +129,25 @@ export default function AboutPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1 }}
-                    className="relative pl-16"
+                    className="relative pl-20"
                   >
                     {/* Node */}
-                    <div className="absolute left-0 top-0 w-12 h-12 rounded-full bg-white dark:bg-ink-900 border-2 border-accent-500 flex items-center justify-center">
+                    <div className="absolute left-0 top-0 w-12 h-12 rounded-full bg-white dark:bg-ink-900 border-2 border-accent-500 flex items-center justify-center shadow-lg shadow-accent-500/20">
                       <Icon className="h-5 w-5 text-accent-500" />
                     </div>
 
-                    <div className="card-base p-6 hover:border-accent-500 transition-colors">
-                      <div className="flex items-center gap-3 mb-2">
-                        <span className="font-mono text-xs uppercase tracking-widest text-accent-500">
+                    <div className="group relative rounded-xl border border-ink-200 dark:border-ink-800 p-6 hover:border-accent-500/50 transition-all bg-gradient-to-br from-white/50 via-white/30 to-transparent dark:from-ink-900/50 dark:via-ink-900/30 dark:to-transparent hover:shadow-lg hover:shadow-accent-500/10">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
+
+                      <div className="relative flex items-center gap-3 mb-2">
+                        <span className="font-mono text-xs uppercase tracking-widest text-accent-500 font-medium">
                           {beat.year}
                         </span>
-                        <span className="font-display text-xl text-ink-900 dark:text-ink-50">
+                        <span className="font-display text-lg text-ink-900 dark:text-ink-50 group-hover:text-accent-500 transition-colors">
                           {beat.title}
                         </span>
                       </div>
-                      <p className="text-ink-600 dark:text-ink-400 text-sm leading-relaxed">
+                      <p className="text-ink-600 dark:text-ink-400 leading-relaxed">
                         {beat.text}
                       </p>
                     </div>
@@ -100,7 +156,7 @@ export default function AboutPage() {
               })}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Experience */}
         <div className="mb-24">
@@ -200,6 +256,7 @@ export default function AboutPage() {
             </Link>
           </div>
         </motion.div>
+        </div>
       </div>
     </div>
   );
